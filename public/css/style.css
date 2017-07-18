@@ -1,9 +1,13 @@
 @charset "UTF-8";
-body {
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
   padding: 0%;
   /*Mise à zéro marges intérieures*/
   margin: 0%;
-  /*Mise à zéro marges extérieures*/
+  /*Mise à zéro marges extérieures*/ }
+
+body {
   background: url(https://s-media-cache-ak0.pinimg.com/736x/82/a6/6c/82a66c6b69a61564494a682e4fb0d704.jpg) no-repeat center fixed;
   background-size: cover;
   /*Couleur de fond de la page*/ }
@@ -15,6 +19,10 @@ body {
 #logo {
   width: 100%;
   /*Taille*/ }
+
+.col-md-4 {
+  margin-top: 2px;
+  padding: 5px; }
 
 /*////////////Bouton Don////////////////////////*/
 #barre {
@@ -75,6 +83,19 @@ body {
   margin-top: 5%;
   margin-left: 4px;
   color: #6D6D6D; }
+
+dropdown-menu li:hover .sub-menu {
+  /*Pour que le menu passe en hover*/
+  visibility: visible; }
+
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
+#menuGalerie {
+  min-width: 110px; }
+
+.sousMenu {
+  min-width: 120px; }
 
 /*///////////////////////////////Citation////////////////////////////////////////*/
 blockquote {
@@ -224,8 +245,6 @@ aside {
   width: 10%; }
 
 #Palmares h3 {
-  padding: 10px;
-  margin-top: 40px;
   background-color: rgba(255, 160, 148, 0.1);
   border-bottom: 2px solid orange;
   font-family: 'Abel', sans-serif;

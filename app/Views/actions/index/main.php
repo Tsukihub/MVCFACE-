@@ -1,5 +1,5 @@
         <h1 class="titreSection col-md-12" id="pagePalmares">Action</h1>
-          <section class="col-md-12 col-xs-12 presentation">
+          <section class="col-md-12 presentation">
           <!--Palmarès-->
           <article id="Palmares">
 		<?php foreach ($actions as $actions): ?>
