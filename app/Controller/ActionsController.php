@@ -15,13 +15,13 @@ class ActionsController extends AppController{
 
 		$category= $this->Category->categoryRelativeTo();
         $actions = $this->Action->all();
-        $this->render('actions.main.index', compact('actions'), 'actions.side.index', compact('category'));
+        $this->render('actions.index.main', compact('actions'), 'actions.index.side', compact('category'));
 
     }
    public function show(){
         $actions = $this->Action->find($_GET['id']);
         $category= $this->Category->categoryRelativeTo();
-        $this->render('actions.show', compact('actions'), 'actions.side.index', compact('category'));
+        $this->render('actions.show', compact('actions'), 'actions.index.side', compact('category'));
     }
    public function category(){
         $categorie = $this->Category->find($_GET['id']);
@@ -30,6 +30,6 @@ class ActionsController extends AppController{
         }
         $actions = $this->Action->findActionsWithCategory($_GET['id']);
         $category = $this->Category->categoryRelativeTo();
-        $this->render('posts.category', compact('actions','categorie'), 'actions.side.index', compact('category'));
+        $this->render('actions.category', compact('actions','categorie'), 'actions.index.side', compact('category'));
     }
 }

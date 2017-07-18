@@ -16,7 +16,7 @@ class PostsController extends AppController{
     public function index(){
         $posts = $this->Post->last();
         $category = $this->Category->categoryRelativeTo();
-        $this->render('posts.index', compact('posts'), 'actions.side.index', compact('category'));
+        $this->render('posts.index', compact('posts'), 'actions.index.side', compact('category'));
     }
 
     public function category(){
