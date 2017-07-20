@@ -15,7 +15,7 @@ class PostTable extends Table{
         return $this->query("
             SELECT articles.id, articles.titre, articles.contenu, articles.date, categories.titre as categorie
             FROM articles
-            LEFT JOIN categories ON category_id = categories.id
+            LEFT JOIN categories ON articles_category_id = categories.id
             ORDER BY articles.date DESC");
     }
 
@@ -28,8 +28,8 @@ class PostTable extends Table{
         return $this->query("
             SELECT articles.id, articles.titre, articles.contenu, articles.date, categories.titre as categorie
             FROM articles
-            LEFT JOIN categories ON category_id = categories.id
-            WHERE articles.category_id = ?
+            LEFT JOIN categories ON articles_category_id = categories.id
+            WHERE articles.articles_category_id = ?
             ORDER BY articles.date DESC", [$category_id]);
     }
 
@@ -42,7 +42,7 @@ class PostTable extends Table{
         return $this->query("
             SELECT articles.id, articles.titre, articles.contenu, articles.date, categories.titre as categorie
             FROM articles
-            LEFT JOIN categories ON category_id = categories.id
+            LEFT JOIN categories ON articles_category_id = categories.id
             WHERE articles.id = ?", [$id], true);
     }
 }

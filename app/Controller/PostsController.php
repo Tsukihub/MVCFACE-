@@ -20,13 +20,13 @@ class PostsController extends AppController{
     }
 
     public function category(){
-        $category = $this->Category->find($_GET['id']);
+        $categorie = $this->Category->find($_GET['category']);
         if($categorie === false){
             $this->notFound();
         }
-        $articles = $this->Post->lastByCategory($_GET['id']);
-        $categories = $this->Category->categoryRelativeTo();
-        $this->render('posts.category', compact('articles', 'categories', 'category'));
+        $articles = $this->Post->lastByCategory($_GET['category']);
+        $category = $this->Category->categoryRelativeTo();
+        $this->render('posts.category', compact('articles', 'categorie'), 'actions.index.side', compact('category'));
     }
 
     public function show(){

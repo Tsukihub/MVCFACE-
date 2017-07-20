@@ -24,5 +24,8 @@ public function categoryRelativeTo(){
             FROM categories
             WHERE categories.contentType = ?", [$contentType]);
 }
+    public function findcategory($id){
+        return $this->query("SELECT * FROM {$this->table} WHERE actions_category_id = ?", [$id], true);
+    }
 
 }

@@ -3,6 +3,7 @@
           <!--Palmarès-->
           <article id="Palmares">
 <h2><?= $actions->title; ?></h2>
+<p><em class="pull-right category"><?= $categorie->titre ?></em></p>
 <p><?= $actions->content; ?></p>
 </article>
 </section>

@@ -20,16 +20,20 @@ class ActionsController extends AppController{
     }
    public function show(){
         $actions = $this->Action->find($_GET['id']);
-        $category= $this->Category->categoryRelativeTo();
-        $this->render('actions.show', compact('actions'), 'actions.index.side', compact('category'));
-    }
-   public function category(){
-        $categorie = $this->Category->find($_GET['id']);
-        if($category === false){
+        $categorie = $this->Category->find($_GET['category']);
+        if($categorie === false){
             $this->notFound();
         }
-        $actions = $this->Action->findActionsWithCategory($_GET['id']);
+        $category= $this->Category->categoryRelativeTo();
+        $this->render('actions.show', compact('actions', 'categorie'), 'actions.index.side', compact('category'));
+    }
+   public function category(){
+        $categorie = $this->Category->find($_GET['category']);
+        if($categorie === false){
+            $this->notFound();
+        }
+        $action = $this->Action->findCategory($_GET['category']);
         $category = $this->Category->categoryRelativeTo();
-        $this->render('actions.category', compact('actions','categorie'), 'actions.index.side', compact('category'));
+        $this->render('actions.category', compact('action','categorie'), 'actions.index.side', compact('category'));
     }
 }

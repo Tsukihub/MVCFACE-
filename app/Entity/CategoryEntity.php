@@ -17,7 +17,7 @@ class CategoryEntity extends Entity{
 		}else{
 			$contentType = "posts";
 		}
-        return "index.php?p=".$contentType.".category&id=" . $this->id;
+        return "index.php?p=".$contentType.".category&category=" . $this->id;
     }
 
 }

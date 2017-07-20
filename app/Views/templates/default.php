@@ -38,7 +38,7 @@
                             <ul class="nav navbar-nav">
                   <!--Bouton-->
                   <li class="dropdown">
-                    <a href="index.html" role="button">Accueil</a>
+                    <a href="index.php" role="button">Accueil</a>
                   </li>   
                   <!--Bouton-->
                   <li class="dropdown">
@@ -113,6 +113,8 @@
 
 
     <footer id="footer" class="row-fluid">
+    <a href="#placementDon"><div style="background-color: #679FA6; height: 30px; width: 30px; padding: 8px; margin : 8px;" class="pull-right text-center">^</div></a>
+    <div id="plan-site">
         <h4 class="text-center col-xs-12 col-md-12" onclick="affichageFooter('planSite');" id="titrePlanSite">Plan du site</h4>
             <div class="col-md-12 col-xs-12" id="planSite">
           <div class="row-fluid">
