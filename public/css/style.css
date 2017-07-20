@@ -24,6 +24,15 @@ body {
   margin-top: 2px;
   padding: 5px; }
 
+.category, .category a {
+  color: grey; }
+
+.category li {
+  list-style-type: none; }
+.category a:hover {
+  text-decoration: none;
+  color: black; }
+
 /*////////////Bouton Don////////////////////////*/
 #barre {
   height: 60px;
@@ -138,13 +147,16 @@ footer {
 /*//////////////////////////////////////////////////////////////////////////////*/
 /*//////////////////////////////SECTIONS////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////////////////////////*/
-.titreSection {
+.titreSection, .titreSectionside {
   background-color: rgba(18, 110, 122, 0.6);
   box-shadow: 6px 10px 18px 4px rgba(0, 0, 0, 0.3);
   padding: 1.5%;
   color: white;
   margin: 0;
   margin-top: 2%; }
+
+.titreSectionside {
+  background-color: #E0A377; }
 
 /*//////////////////////////////////////////////////////////////////////////////*/
 /*//////////////////////////////SECTION FIL ACTU////////////////////////////////*/
@@ -538,7 +550,7 @@ small {
     #filActu img {
       display: none; }
 
-  .titreSection {
+  .titreSection, .titreSectionside {
     box-shadow: none;
     text-align: center; }
 
@@ -686,7 +698,7 @@ small {
   .container {
     width: 100%; }
 
-  .titreSection {
+  .titreSection, .titreSectionside {
     box-shadow: none; }
 
   /*///Navigation///*/
