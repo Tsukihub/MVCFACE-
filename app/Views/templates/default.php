@@ -29,17 +29,13 @@
 
     <header class="row">
                     <!--Logo Face-->
-                    <div class="col-md-2 col-sm-2 col-xs-12">
-                        <a href="index.html"><img src="../public/img/logo.svg" alt="logo Face territoire bourbonnais" id="logo" /></a>
+                    <div class="col-md-3 col-sm-3 col-xs-12 logoFace">
+                        <a href="index.php?p=posts.index"><img src="../public/img/logo.svg" alt="logo Face territoire bourbonnais" id="logo" /></a>
                     </div>
                     <!--Barre de navigation-->
-                    <nav class="navbar navbar-default col-md-10 col-sm-10 col-xs-12">
+                    <nav class="navbar navbar-default col-md-9 col-sm-10 col-xs-9">
                         <div class="container-fluid">
                             <ul class="nav navbar-nav">
-                  <!--Bouton-->
-                  <li class="dropdown">
-                    <a href="index.php" role="button">Accueil</a>
-                  </li>   
                   <!--Bouton-->
                   <li class="dropdown">
                     <a href="index.php?p=actions.index">Actions</a>
@@ -77,15 +73,7 @@
                             <li><a href="partenariat.html#pageParticulier">Les particuliers</a></li>
                         </ul>
                         </li>
-                        <!--Bouton-->
-                        <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">La Fabrik<span class="caret"></span></a>
-                        <ul class="dropdown-menu sousMenu">
-                            <li><a href="laFabrik.html">Présentation</a></li>
-                            <li><a href="laFabrik.html#pageProjet">Projets</a></li>
-                            <li><a href="apprenants.html">Les apprenants</a></li>
-                        </ul>
-                        </li>
+                  
                   <!--Bouton-->
                   <li class="dropdown">
                     <a href="contact.php" role="button">Contact</a>

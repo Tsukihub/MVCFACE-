@@ -4,16 +4,19 @@ namespace App\Controller\Admin;
 
 use Core\HTML\BootstrapForm;
 
-class PostsController extends AppController{
+class ActionsController extends AppController{
 
     public function __construct(){
         parent::__construct();
-        $this->loadModel('Post');
+        $this->loadModel('Action');
+        $this->loadmodel('Category');
     }
 
     public function index(){
-        $posts = $this->Post->all();
-        $this->render('admin.posts.index', compact('posts'));
+        $actions = $this->Action->all();
+        $actioncategory =  $this->Category->categoryRelativeTo();
+        $this->render('admin.actions.index.main', compact('actions'), 'admin.actions.index.side', compact('actioncategory'));
+
     }
 
     public function add(){

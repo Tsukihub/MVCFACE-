@@ -33,6 +33,12 @@ body {
   text-decoration: none;
   color: black; }
 
+.logoFace {
+  margin-top: -45px; }
+
+nav .dropdown-menu li a:hover {
+  background-color: #58939B !important; }
+
 /*////////////Bouton Don////////////////////////*/
 #barre {
   height: 60px;
@@ -66,6 +72,9 @@ body {
   /*Quand on survol un lien de la barre de navigation*/
   background-color: rgba(18, 110, 122, 0.4);
   border-bottom: 3px solid #CF844D; }
+
+.navbar-nav .dropdown-menu li:hover {
+  border-bottom: none; }
 
 .navbar-default .navbar-nav li:hover a {
   /*Quand le lien est survolé, la typo devient blanche*/
