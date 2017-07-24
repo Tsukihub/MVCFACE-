@@ -6,7 +6,7 @@
         <?php foreach($category as $categorie): ?>
             <li><a href="<?= $categorie->url; ?>"><?= $categorie->titre; ?></a></li>
         <?php endforeach; ?>
-            <li><a href="index.php?p=actions.index">Toutes les actions</a></li>
+            <li><a href="index.php?p=actions.index">Toutes catégories</a></li>
         </ul>
         </article>
         </section>

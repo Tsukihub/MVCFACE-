@@ -8,9 +8,7 @@ html, body {
   /*Mise à zéro marges extérieures*/ }
 
 body {
-  background: url(https://s-media-cache-ak0.pinimg.com/736x/82/a6/6c/82a66c6b69a61564494a682e4fb0d704.jpg) no-repeat center fixed;
-  background-size: cover;
-  /*Couleur de fond de la page*/ }
+  background-color: #F0F0F0; }
 
 .container {
   /*Mise à zéro du padding du container de bootstrap*/
@@ -66,7 +64,8 @@ nav .dropdown-menu li a:hover {
   border: none;
   /*Pas de bordure*/
   font-size: 1.5em;
-  /*Taille de la typo*/ }
+  /*Taille de la typo*/
+  width: 100%; }
 
 .navbar-nav li:hover {
   /*Quand on survol un lien de la barre de navigation*/
@@ -78,24 +77,32 @@ nav .dropdown-menu li a:hover {
 
 .navbar-default .navbar-nav li:hover a {
   /*Quand le lien est survolé, la typo devient blanche*/
-  color: white; }
+  color: #126e7a; }
+
+.navbar-default .navbar-nav li:hover .dropdown-menu a {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #E0A377; }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: white;
-  background-color: rgba(18, 110, 122, 0.4); }
+  color: #126e7a;
+  box-shadow: none; }
 
 .dropdown-menu {
   /*Menu déroulant*/
-  background-color: rgba(0, 0, 0, 0.8);
+  background: none;
+  border: none;
+  box-shadow: none;
   /*Arrière plan avec un peu de transparence*/ }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   /*Pour que la couleur des liens ne change pas lorsque la souris n'est plus sur le menu séléctionné*/
   padding-top: 5%;
   padding-bottom: 5%;
-  color: white; }
+  background-color: #E0A377;
+  color: #126e7a; }
 
 .caret {
   margin-top: 5%;
@@ -106,8 +113,8 @@ dropdown-menu li:hover .sub-menu {
   /*Pour que le menu passe en hover*/
   visibility: visible; }
 
-.dropdown:hover .dropdown-menu {
-  display: block; }
+.dropdown-menu {
+  display: none; }
 
 #menuGalerie {
   min-width: 110px; }
@@ -115,6 +122,9 @@ dropdown-menu li:hover .sub-menu {
 .sousMenu {
   min-width: 120px; }
 
+@media screen and (min-width: 500px) {
+  .dropdown:hover .dropdown-menu {
+    display: block; } }
 /*///////////////////////////////Citation////////////////////////////////////////*/
 blockquote {
   border-left: 0;
