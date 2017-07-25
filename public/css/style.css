@@ -269,11 +269,14 @@ aside {
   box-shadow: 6px 10px 18px 4px rgba(0, 0, 0, 0.3); }
   .presentation h2 {
     padding: 10px;
-    margin-bottom: 40px;
-    background-color: rgba(255, 160, 148, 0.1);
-    border-bottom: 2px solid orange;
+    margin-bottom: 0px;
+    background-color: rgba(18, 110, 122, 0.1);
     font-family: 'Abel', sans-serif;
     color: #794300; }
+    .presentation h2 a {
+      color: #1D4B58; }
+  .presentation blockquote {
+    border-left: 3px solid orange; }
 
 #presentation img {
   width: 10%; }

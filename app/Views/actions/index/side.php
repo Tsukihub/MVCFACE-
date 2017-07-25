@@ -1,4 +1,4 @@
-        <h1 class="titreSectionside col-md-12">Catégorie</h1>
+        <h1 class="titreSectionside col-md-12 text-center">Domaines d'action</h1>
           <section class="col-md-12 col-xs-12 presentation">
           <!--Palmarès-->
           <article id="Palmares">
