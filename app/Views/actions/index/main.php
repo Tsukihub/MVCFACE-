@@ -1,4 +1,4 @@
-        <h1 class="titreSection col-md-12 text-center" id="pagePalmares"> Nos actions</h1>
+        <h1 class="titreSection col-md-12 text-center"> Nos actions</h1>
           <section class="col-md-12 presentation">
           <!--Palmarès-->
           <article id="Palmares">

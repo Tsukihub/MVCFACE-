@@ -1,4 +1,4 @@
-<h1 class="titreSection col-md-12" id="pagePalmares">Action</h1>
+<h1 class="titreSection col-md-12">Action</h1>
     <section class="col-md-12 col-xs-12 presentation">
      	<article class="articles">
             <div class="row">
