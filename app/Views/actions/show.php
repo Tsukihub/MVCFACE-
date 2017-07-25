@@ -7,15 +7,15 @@
 
               <div class="col-md-5 col-xs-10 col-sm-12">
                 <h2><?= $actions->title; ?></h2>
-                <p><?= $actions->accroche; ?></p>
-                <p><?= $actions->content; ?></p>
+                <blockquote><p><?= $actions->accroche; ?></p></blockquote>
+                <p class="actioncontent"><?= $actions->content; ?></p>
               </div>
               <?php endif ?>
               <?php if (!$actions->actions_img_name):?>
-              <div class="col-md-10 col-xs-10 col-sm-12">
+              <div class="col-md-12 col-xs-12 col-sm-12">
                 <h2><?= $actions->title; ?></h2>
-                <p><?= $actions->accroche; ?></p>
-                <p><?= $actions->content; ?></p>
+                <blockquote><p><?= $actions->accroche; ?></p></blockquote>
+                <p class="actioncontent"><?= $actions->content; ?></p>
               </div>
               <?php endif ?>
             </div>

@@ -7,7 +7,7 @@
 
             <h2><a href="<?= $action->url ?>"><?= $action->title; ?></a></h2>
 
-            <blockquote><p><?= $action->content; ?></p></blockquote>
+            <blockquote><p><?= $action->accroche; ?></p></blockquote>
 
         <?php endforeach; ?>
 </article>

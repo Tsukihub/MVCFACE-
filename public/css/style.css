@@ -276,7 +276,16 @@ aside {
     .presentation h2 a {
       color: #1D4B58; }
   .presentation blockquote {
-    border-left: 3px solid orange; }
+    border-left: 3px solid orange;
+    margin-bottom: 0px;
+    text-indent: 30px; }
+  .presentation .actioncontent {
+    background-color: #DAE4E5;
+    margin-top: 0px;
+    padding: 10px;
+    text-indent: 30px;
+    color: grey;
+    line-height: 30px; }
 
 #presentation img {
   width: 10%; }
