@@ -9,22 +9,21 @@ class ActionsController extends AppController{
     public function __construct(){
         parent::__construct();
         $this->loadModel('Action');
-        $this->loadmodel('Category');
+ 
     }
 
     public function index(){
         $actions = $this->Action->all();
-        $actioncategory =  $this->Category->categoryRelativeTo();
-        $this->render('admin.actions.index.main', compact('actions'), 'admin.actions.index.side', compact('actioncategory'));
-
+        $this->render('admin.actions.index', compact('actions'));
     }
 
     public function add(){
         if (!empty($_POST)) {
-            $result = $this->Post->create([
-                'titre' => $_POST['titre'],
-                'contenu' => $_POST['contenu'],
-                'category_id' => $_POST['category_id']
+            $result = $this->Action->create([
+                'title' => $_POST['title'],
+                'accroche' => $_POST['accroche'],
+                'content' => $_POST['content'],
+                'actions_category_id' => $_POST['actions_category_id']
             ]);
             if($result){
                 return $this->index();
@@ -33,30 +32,31 @@ class ActionsController extends AppController{
         $this->loadModel('Category');
         $categories = $this->Category->extract('id', 'titre');
         $form = new BootstrapForm($_POST);
-        $this->render('admin.posts.edit', compact('categories', 'form'));
+        $this->render('admin.actions.edit', compact('categories', 'form'));
     }
 
     public function edit(){
         if (!empty($_POST)) {
-            $result = $this->Post->update($_GET['id'], [
-                'titre' => $_POST['titre'],
-                'contenu' => $_POST['contenu'],
-                'category_id' => $_POST['category_id']
+            $result = $this->Action->update($_GET['id'], [
+                'title' => $_POST['title'],
+                'accroche' => $_POST['accroche'],
+                'content' => $_POST['content'],
+                'actions_category_id' => $_POST['actions_category_id']
             ]);
             if($result){
                 return $this->index();
             }
         }
-        $post = $this->Post->find($_GET['id']);
+        $post = $this->Action->find($_GET['id']);
         $this->loadModel('Category');
         $categories = $this->Category->extract('id', 'titre');
         $form = new BootstrapForm($post);
-        $this->render('admin.posts.edit', compact('categories', 'form'));
+        $this->render('admin.actions.edit', compact('categories', 'form'));
     }
 
     public function delete(){
         if (!empty($_POST)) {
-            $result = $this->Post->delete($_POST['id']);
+            $result = $this->Action->delete($_POST['id']);
             return $this->index();
         }
     }

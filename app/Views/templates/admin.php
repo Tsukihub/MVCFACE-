@@ -30,7 +30,7 @@
     <header class="row">
                     <!--Logo Face-->
                     <div class="col-md-3 col-sm-3 col-xs-12 logoFace">
-                        <a href="index.php?p=posts.index"><img src="../public/img/logo.svg" alt="logo Face territoire bourbonnais" id="logo" /></a>
+                        <a href="index.php?p=admin.posts.index"><img src="../public/img/logo.svg" alt="logo Face territoire bourbonnais" id="logo" /></a>
                     </div>
                     <!--Barre de navigation-->
                     <nav class="navbar navbar-default col-md-9 col-sm-10 col-xs-9">

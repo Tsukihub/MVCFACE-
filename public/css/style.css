@@ -124,7 +124,10 @@ dropdown-menu li:hover .sub-menu {
 
 @media screen and (min-width: 500px) {
   .dropdown:hover .dropdown-menu {
-    display: block; } }
+    display: block; }
+
+  .navbar {
+    width: auto; } }
 /*///////////////////////////////Citation////////////////////////////////////////*/
 blockquote {
   border-left: 0;
