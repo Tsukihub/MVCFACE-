@@ -20,4 +20,5 @@ class CategoryEntity extends Entity{
         return "index.php?p=".$contentType.".category&category=" . $this->id;
     }
 
+
 }

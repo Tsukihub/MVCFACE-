@@ -28,4 +28,13 @@ public function categoryRelativeTo(){
         return $this->query("SELECT * FROM {$this->table} WHERE actions_category_id = ?", [$id], true);
     }
 
+        public function extractIfCategoryRelativeTo($key, $value){
+        $records = $this->categoryRelativeTo();
+        $return = [];
+        foreach($records as $v){
+            $return[$v->$key] = $v->$value;
+        }
+        return $return;
+    }
+
 }

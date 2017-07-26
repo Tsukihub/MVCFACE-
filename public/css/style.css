@@ -202,7 +202,8 @@ footer {
 .articles {
   border-bottom: 2px solid #1693a5;
   padding-top: 5%;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  margin-top: 0px; }
 
 #dernierArticle {
   border: none; }
@@ -287,6 +288,13 @@ aside {
     text-indent: 30px;
     color: grey;
     line-height: 30px; }
+  .presentation .articles {
+    margin: 0px; }
+    .presentation .articles img {
+      margin-right: 0px;
+      padding-right: 0px; }
+    .presentation .articles h2 {
+      margin-top: 0px; }
 
 #presentation img {
   width: 10%; }
@@ -817,3 +825,8 @@ small {
 
   #nomLong {
     margin-left: -10%; } }
+.padding-right-none {
+  margin-right: 0px; }
+
+.padding-left-none {
+  padding-left: 0px; }

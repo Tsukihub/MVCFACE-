@@ -31,9 +31,9 @@ class ActionsController extends AppController{
             }
         }
         $this->loadModel('Category');
-        $categories = $this->Category->extract('id', 'titre');
+        $categories = $this->Category->extractIfCategoryRelativeTo('id', 'titre');
         $form = new BootstrapForm($_POST);
-        $this->render('admin.actions.edit', compact('categories', 'form'));
+        $this->render('admin.actions.edit.main', compact('categories', 'form'));
     }
 
     public function edit(){
@@ -54,9 +54,10 @@ class ActionsController extends AppController{
         $actions = $this->Action->all();
         $this->loadModel('Img_path');
         $path = $this->Img_path->findPath();
-        $categories = $this->Category->extract('id', 'titre');
+        $categories = $this->Category->extractIfCategoryRelativeTo('id', 'titre');
         $form = new BootstrapForm($post);
-        $this->render('admin.actions.edit.main', compact('categories', 'form'), 'admin.actions.edit.side', compact('post', 'actions', 'path'));
+        $files = array_slice(scandir('../public/img/actions'), 2);
+        $this->render('admin.actions.edit.main', compact('categories', 'form'), 'admin.actions.edit.side', compact('post', 'actions', 'path','files'));
 
 
 

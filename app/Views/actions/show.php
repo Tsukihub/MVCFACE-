@@ -3,13 +3,17 @@
      	<article class="articles">
             <div class="row">
             <?php if ($actions->actions_img_name):?>
-              <img src="<?= $path->img_path.$actions->actions_img_name; ?>" class="col-md-7 col-xs-1 col-sm-7" alt="<?= $actions->actions_img_description; ?> " />
+             
+              <img src="<?= $path->img_path.$actions->actions_img_name; ?>" class="col-md-7 col-xs-1 col-sm-7 padding-right-none" alt="<?= $actions->actions_img_description; ?> " />
 
-              <div class="col-md-5 col-xs-10 col-sm-12">
+              <div class="col-md-5 col-xs-12 col-sm-12 padding-left-none">
                 <h2><?= $actions->title; ?></h2>
                 <blockquote><p><?= $actions->accroche; ?></p></blockquote>
+               </div>
+               <div class="col-md-12 col-xs-12 col-sm-12 ">
                 <p class="actioncontent"><?= $actions->content; ?></p>
-              </div>
+               </div>
+             
               <?php endif ?>
               <?php if (!$actions->actions_img_name):?>
               <div class="col-md-12 col-xs-12 col-sm-12">
