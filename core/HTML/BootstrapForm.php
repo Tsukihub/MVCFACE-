@@ -16,13 +16,18 @@ class BootstrapForm extends Form{
      * @param array $options
      * @return string
      */
-    public function input($name, $label, $options = []){
+    public function input($name, $label, $options = [], $getGet = false){
         $type = isset($options['type']) ? $options['type'] : 'text';
         $label = '<label>' . $label . '</label>';
+        if($getGet){
+            $fieldvalue = $getGet;
+        }else{
+            $fieldvalue = $this->getValue($name);
+        }
         if($type === 'textarea'){
-            $input = '<textarea name="' . $name . '" class="form-control">' . $this->getValue($name) . '</textarea>';
-        } else{
-            $input = '<input type="' . $type . '" name="' . $name . '" value="' . $this->getValue($name) . '" class="form-control">';
+            $input = '<textarea name="' . $name . '" class="form-control">' . $fieldvalue . '</textarea>';
+        }else{
+            $input = '<input type="' . $type . '" name="' . $name . '" value="' . $fieldvalue . '" class="form-control">';
         }
         return $this->surround($label . $input);
     }
@@ -40,6 +45,7 @@ class BootstrapForm extends Form{
         $input .= '</select>';
         return $this->surround($label . $input);
     }
+
 
     /**
      * @return string

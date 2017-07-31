@@ -20,8 +20,8 @@
 <p> Copier le nom de l'image dans le champ : Nom de l'image à afficher pour utiliser pour cette action :<br></p>
 <?php foreach($files as $files): ?>
   <div class='row'>
-              <img src="<?= $path->img_path.$files; ?>" class="col-md-2 col-xs-1 col-sm-7" />
-<p>Nom <?= $files;?></p>
+              <a href="http://localhost/mvc/public/index.php?p=admin.actions.edit&id=<?= $_GET['id']; ?>&img=<?= $files; ?>"><img src="<?= $path->img_path.$files; ?>" class="col-md-2 col-xs-1 col-sm-7" />
+<p>Nom <?= $files;?></p></a>
 <br>
 
 

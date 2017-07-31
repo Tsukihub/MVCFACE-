@@ -25,7 +25,9 @@ class ActionsController extends AppController{
                 'title' => $_POST['title'],
                 'accroche' => $_POST['accroche'],
                 'content' => $_POST['content'],
-                'actions_category_id' => $_POST['actions_category_id']
+                'actions_category_id' => $_POST['actions_category_id'],
+                'actions_img_name' => $_POST['actions_img_name']
+
             ]);
             if($result){
                 return $this->index();
@@ -39,6 +41,8 @@ class ActionsController extends AppController{
 
     public function edit(){
         if (!empty($_POST)) {
+     
+  
             $result = $this->Action->update($_GET['id'], [
                 'title' => $_POST['title'],
                 'accroche' => $_POST['accroche'],
@@ -46,6 +50,7 @@ class ActionsController extends AppController{
                 'actions_img_name' => $_POST['actions_img_name'],
                 'actions_category_id' => $_POST['actions_category_id']
             ]);
+        
             if($result){
                 return $this->index();
             }
