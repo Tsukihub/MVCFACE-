@@ -24,5 +24,11 @@
 <p>Nom <?= $files;?></p>
 <br>
 
+
 </div>
+
 <?php endforeach; ?>
+<form method="post" enctype="multipart/form-data">
+    <?=$formulaire->input('img','image',['type'=>'file']);?>
+    <button class="btn btn-primary">Sauvegarder</button>
+</form>

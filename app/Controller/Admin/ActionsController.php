@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use Core\HTML\BootstrapForm;
+use Core\HTML\Upload;
 
 class ActionsController extends AppController{
 
@@ -49,6 +50,20 @@ class ActionsController extends AppController{
                 return $this->index();
             }
         }
+
+
+        if(isset($_FILES["img"])){
+           $upload = new Upload($_FILES["img"]);
+           $upload->Process(ROOT."/public/img/actions");
+           if ($upload->processed) {
+           echo 'original image copied';
+           } else {
+           echo 'error : ' . $upload->error;
+           }
+
+        }
+
+
         $post = $this->Action->find($_GET['id']);
         $this->loadModel('Category');
         $actions = $this->Action->all();
@@ -56,8 +71,9 @@ class ActionsController extends AppController{
         $path = $this->Img_path->findPath();
         $categories = $this->Category->extractIfCategoryRelativeTo('id', 'titre');
         $form = new BootstrapForm($post);
+        $formulaire = new BootstrapForm();
         $files = array_slice(scandir('../public/img/actions'), 2);
-        $this->render('admin.actions.edit.main', compact('categories', 'form'), 'admin.actions.edit.side', compact('post', 'actions', 'path','files'));
+        $this->render('admin.actions.edit.main', compact('categories', 'form'), 'admin.actions.edit.side', compact('post', 'actions', 'path','files', 'formulaire'));
 
 
 
