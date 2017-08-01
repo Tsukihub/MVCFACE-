@@ -35,7 +35,7 @@ body {
   margin-top: -45px; }
 
 nav .dropdown-menu li a:hover {
-  background-color: #58939B !important; }
+  background-color: inherit !important; }
 
 /*////////////Bouton Don////////////////////////*/
 #barre {
@@ -67,27 +67,26 @@ nav .dropdown-menu li a:hover {
   /*Taille de la typo*/
   width: 100%; }
 
-.navbar-nav li:hover {
-  /*Quand on survol un lien de la barre de navigation*/
-  background-color: rgba(18, 110, 122, 0.4);
-  border-bottom: 3px solid #CF844D; }
-
 .navbar-nav .dropdown-menu li:hover {
-  border-bottom: none; }
+  border-bottom: none;
+  color: #126e7a; }
 
 .navbar-default .navbar-nav li:hover a {
   /*Quand le lien est survolé, la typo devient blanche*/
+  color: #777; }
+
+.navbar-default .navbar-nav ul li:hover a {
   color: #126e7a; }
 
 .navbar-default .navbar-nav li:hover .dropdown-menu a {
   padding-top: 5%;
-  padding-bottom: 5%;
-  background-color: #E0A377; }
+  padding-bottom: 5%; }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   color: #126e7a;
+  background-color: inherit;
   box-shadow: none; }
 
 .dropdown-menu {
@@ -101,8 +100,7 @@ nav .dropdown-menu li a:hover {
   /*Pour que la couleur des liens ne change pas lorsque la souris n'est plus sur le menu séléctionné*/
   padding-top: 5%;
   padding-bottom: 5%;
-  background-color: #E0A377;
-  color: #126e7a; }
+  background-color: #DAE4E5; }
 
 .caret {
   margin-top: 5%;
@@ -127,7 +125,18 @@ dropdown-menu li:hover .sub-menu {
     display: block; }
 
   .navbar {
-    width: auto; } }
+    width: auto; }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    background-color: inherit;
+    color: #777; }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: #126e7a; }
+
+  .navbar-nav li:hover {
+    /*Quand on survol un lien de la barre de navigation*/
+    border-bottom: 3px solid #CF844D; } }
 /*///////////////////////////////Citation////////////////////////////////////////*/
 blockquote {
   border-left: 0;
