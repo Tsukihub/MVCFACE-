@@ -112,13 +112,20 @@ https://www.solodev.com/blog/web-design/adding-an-infinite-client-logo-carousel-
 </div>
 <div id=partners-slider>
    <section class="customer-logos slider" >
+   <?php $files = array_slice(scandir('../public/img/partenaires'), 2);
+    foreach($files as $logo){
+  
+    echo ("<div class='slide'><img style='height: 70px;'' src='../public/img/partenaires/$logo' ></div>");
+  }
+    ?><!-- 
+
     <div class="slide"><img style="height: 50px;" src="../public/img/actions/AE.png"></div>
     <div class="slide"><img style="height: 50px;" src="../public/img/actions/petitvelorouge.png"></div>
     <div class="slide"><img style="height: 50px;" src="../public/img/actions/double.png"></div>
     <div class="slide"><img style="height: 50px;" src="../public/img/partenaires/cciallier.jpg"></div>
     <div class="slide"><img style="height: 50px;" src="../public/img/partenaires/cciallier.jpg"></div>
     <div class="slide"><img style="height: 50px;" src="../public/img/partenaires/cciallier.jpg"></div>
-    <div class="slide"><img style="height: 50px;" src="../public/img/partenaires/cciallier.jpg"></div>
+    <div class="slide"><img style="height: 50px;" src="../public/img/partenaires/cciallier.jpg"></div> -->
 
 
   </section>
