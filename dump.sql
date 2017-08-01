@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 24, 2017 at 07:43 
+-- Generation Time: Aug 01, 2017 at 06:27 
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -41,11 +41,12 @@ CREATE TABLE `actions` (
 --
 
 INSERT INTO `actions` (`id`, `title`, `actions_category_id`, `content`, `actions_img_name`, `actions_img_description`, `accroche`) VALUES
-(1, 'CV vidéo', 3, 'La première action engagée par Face territoire bourbonnais suit cette logique : la réalisation de CV vidéo « pour améliorer les chances de taper dans l\'œil d\'un recruteur, alors que ceux-ci reçoivent aujourd\'hui un grand nombre de CV papier et de lettres de motivation, parfois stéréotypées », explique Eric Getenay, directeur opérationnel (en bénévolat de compétence) du club.', '', '', '0'),
-(2, 'action deux', 5, 'de', '', '', '0'),
-(3, 'action deux', 5, 'de5k', '', '', '0'),
-(6, 'CV vidéo', 3, 'La première action engagée par Face territoire bourbonnais suit cette logique : la réalisation de CV vidéo « pour améliorer les chances de taper dans l\'œil d\'un recruteur, alors que ceux-ci reçoivent aujourd\'hui un grand nombre de CV papier et de lettres de motivation, parfois stéréotypées », explique Eric Getenay, directeur opérationnel (en bénévolat de compétence) du club.', '', '', '0'),
-(7, 'civigaz', 5, 'on civigaz', 'AE.png', 'Logo ', 'ça gaz!');
+(1, 'CV vidéo', 3, 'La première action engagée par Face territoire bourbonnais suit cette logique : la réalisation de CV vidéo « pour améliorer les chances de taper dans l\'œil d\'un recruteur, alors que ceux-ci reçoivent aujourd\'hui un grand nombre de CV papier et de lettres de motivation, parfois stéréotypées », explique Eric Getenay, directeur opérationnel (en bénévolat de compétence) du club.', 'petitvelorouge.png', '', 'Face s\'engage dans la lutte pour l\'accès à l\'emploi avec le financement du tournage et montage de cv vidéos!'),
+(7, 'civigaz', 5, 'Ce programme ambitieux débute en janvier 2016 dans trois zones pilotes -  Métropole Européenne de Lille, Saint-Etienne et Paris, et sera ensuite étendu au niveau national sur une vingtaine de sites à partir de septembre 2016. En trois ans, CIVIGAZ prévoit d’accueillir 660 jeunes volontaires âgés de 18 à 25 ans. Leur mission, d’une durée de 7 mois, consiste à sensibiliser les ménages modestes sur les différentes façons d’économiser l’énergie, la prévention des fuites de gaz et la qualité de l’air intérieur. CIVIGAZ a l’ambition de sensibiliser 100 000 foyers en situation de précarité énergétique en travaillant avec les collectivités et les bailleurs.\r\n\r\n« L’engagement de GRDF dans le programme CIVIGAZ des services civiques de la transition énergétique s’inscrit pleinement dans nos missions de service public ; dans les 3 années qui viennent, plus de 600 jeunes volontaires vont nous accompagner dans la sensibilisation de nos clients en situation de précarité énergétique, à la fois sur les gestes simples qui permettent de mieux comprendre et maîtriser sa consommation d’énergie et sur les recommandations en matière de sécurité. » Edouard Sauvage, Directeur Général de GRDF.\r\n\r\n« Les jeunes volontaires CIVIGAZ sont le premier maillon de la chaîne de détection de la précarité énergétique. Leur rôle est indispensable pour identifier ses causes (mauvaises conditions d’habitat, faibles revenus, hausse du prix de l’énergie…) et mettre les locataires et les propriétaires des logements en relation avec les interlocuteurs adaptés à leurs problématiques. Cette démarche contribue à rendre les jeunes volontaires acteurs de la transition énergétique, tout en leur permettant de bénéficier d’une formation, d’un suivi personnalisé et d’un accompagnement vers l’emploi pendant et après leur mission de Service Civique avec le concours de GRDF et en lien avec Unis-Cité. Ce partenariat est exemplaire et doit préfigurer d’autres coopérations avec des entreprises afin que le Service Civique se développe fortement dans le cadre des conditions fixées par l’Agence du Service Civique. » Vincent Baholet, Délégué général de FACE.\r\n\r\nCIVIGAZ en quelques chiffres :\r\n\r\n    660 volontaires de 18 à 25 ans\r\n\r\n    100 000 logements visités en 3 ans\r\n\r\n    3 villes pilotes : Lille, Saint-Etienne, Paris\r\n\r\n    Lancement national en septembre 2016\r\n\r\nlogo GRDF\r\nService Presse grdf-nat-presse@grdf.fr 01 71 19 18 11\r\nRetour\r\nTéléchargerle communiqué de presse\r\n\r\n    Communiqués de presse\r\n    Dossiers GRDF\r\n    Publications\r\n    Les actualités\r\n    Modules\r\n    Applications\r\n    Vidéos\r\n    Infographies\r\n\r\nSuivez-nous\r\n\r\n    Nous suivre sur Facebook (nouvelle fenêtre) Nous suivre sur Twitter (nouvelle fenêtre) Nous suivre sur Youtube (nouvelle fenêtre) Suivre le blog GRDF (nouvelle fenêtre) Nous suivre sur Linkedin (nouvelle fenêtre) \r\n\r\n', 'AE.png', 'Logo ', 'Faciliter l\'accès aux gaz aux plus démunis leur c\'est notre mission. Avec civigaz, ça gaz!'),
+(8, 'Formation boucherie', 3, 'Face lance sa formation boucherie!', 'Screenshot from 2017-04-13 21-11-54.png', '', 'Un bon boucher est payé plus de 5000 euros par mois, malheureusement ces derniers sont rares.'),
+(9, 'Café d\'en face', 3, 'Tous les mois à l\'intermittant ', 'Article presse du 17-09-2016.jpg', '', 'Petit cercle de jeunes et de moins jeunes auquel nous aurions dû être invités.'),
+(11, 'jerfze', 3, 'fzeff', 'montivélobleuu.jpg', '', 'fz'),
+(12, 'CV vidéo', 3, 'La première action engagée par Face territoire bourbonnais suit cette logique : la réalisation de CV vidéo « pour améliorer les chances de taper dans l\'œil d\'un recruteur, alors que ceux-ci reçoivent aujourd\'hui un grand nombre de CV papier et de lettres de motivation, parfois stéréotypées », explique Eric Getenay, directeur opérationnel (en bénévolat de compétence) du club.', 'montivelobleuu.jpg', '', 'Face s\'engage dans la lutte pour l\'accès à l\'emploi avec le financement du tournage et montage de cv vidéos!');
 
 -- --------------------------------------------------------
 
@@ -58,18 +59,19 @@ CREATE TABLE `articles` (
   `titre` varchar(255) DEFAULT NULL,
   `contenu` longtext,
   `date` datetime DEFAULT NULL,
-  `articles_category_id` int(11) DEFAULT NULL
+  `articles_category_id` int(11) DEFAULT NULL,
+  `accroche` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `articles`
 --
 
-INSERT INTO `articles` (`id`, `titre`, `contenu`, `date`, `articles_category_id`) VALUES
-(2, 'ce site n\'a aucun contenu', 'videvide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide  ', NULL, 2),
-(3, 'Le contenu, un aspect essentiel du site internet?', 'On pense souvent à tord que le contenu d\'un site est primordial. C\'est faux! La majorité des gens sont très cons privilégiez donc des images choc à un contenu argumenté.', NULL, 2),
-(4, 'Formation de merde.', 'Je prie face de bien vouloir arrêter de nous casser les couilles avec un putain de site sans contenu!', NULL, NULL),
-(6, 'Chat errant', 'aider les chats errants! faites un don  face', NULL, 2);
+INSERT INTO `articles` (`id`, `titre`, `contenu`, `date`, `articles_category_id`, `accroche`) VALUES
+(2, 'ce site n\'a aucun contenu pour le moment', 'videvide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide vide  ', NULL, 2, ''),
+(3, 'Le contenu, un aspect essentiel du site internet?', 'On pense souvent à tort que le contenu d\'un site est primordial. C\'est faux! La majorité des gens sont très cons privilégiez donc des images choc à un contenu argumenté.', NULL, 2, ''),
+(6, 'Chat errant', 'aider les chats errants! faites un don  face', NULL, 2, ''),
+(8, 'test accroche', 'djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn djfnhfzeçjn ', NULL, 5, 'je suis une accroche bidon qui a honte d\'elle même. Vite du vrai contenu par pitié que je puisse disparaître.');
 
 -- --------------------------------------------------------
 
@@ -174,12 +176,12 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `actions`
 --
 ALTER TABLE `actions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `articles`
 --
 ALTER TABLE `articles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `categories`
 --

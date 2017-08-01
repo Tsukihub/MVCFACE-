@@ -21,6 +21,7 @@ class PostsController extends AppController{
             $result = $this->Post->create([
                 'titre' => $_POST['titre'],
                 'contenu' => $_POST['contenu'],
+                'accroche' => $_POST['accroche'],
                 'articles_category_id' => $_POST['articles_category_id']
             ]);
             if($result){

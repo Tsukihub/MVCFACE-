@@ -1,11 +1,18 @@
+        <h1 class="titreSection col-md-12 text-center">Actualités</h1>
+          <section class="col-md-12 presentation">
+          <!--Palmarès-->
+          <article id="Palmares">
 <?php foreach ($posts as $post): ?>
 
             <h2><a href="<?= $post->url ?>"><?= $post->titre; ?></a></h2>
 
-            <p><em><?= $post->categorie; ?></em></p>
+            <blockquote><p>
 
-            <p><?= $post->extrait; ?></p>
+            <?= $post->accroche; ?></p></blockquote>
+            <em class='pull-right category'><?= $post->categorie; ?></em>
 
         <?php endforeach; ?>
+        </article>
+        </section>
 
 

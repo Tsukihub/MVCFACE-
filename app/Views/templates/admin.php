@@ -101,49 +101,7 @@
     </div><!-- /.container -->
 
 
-    <footer id="footer" class="row-fluid">
-    <a href="#placementDon"><div style="background-color: #679FA6; height: 30px; width: 30px; padding: 8px; margin : 8px;" class="pull-right text-center">^</div></a>
-    <div id="plan-site">
-        <h4 class="text-center col-xs-12 col-md-12" onclick="affichageFooter('planSite');" id="titrePlanSite">Plan du site</h4>
-            <div class="col-md-12 col-xs-12" id="planSite">
-          <div class="row-fluid">
-            <div class="col-md-2 col-sm-2">
-              <h4><a href="index.html">Accueil</a></h4>
-            </div>
-            <div class="col-md-2 col-sm-2">
-              <h4><a href="presentation.html">Présentation</a></h4>
-              <h6><a href="presentation.html">Histoire</a></h6>
-              <h6><a href="presentation.html#pagePalmares">Action</a></h6>
-            </div>
-            <div class="col-md-2 col-sm-2">
-              <h4><a href="galerie.html">Galerie</a></h4>
-              <h6><a href="galerie.html">Photos</a></h6>
-              <h6><a href="galerie.html#pageVideo">Médias</a></h6>
-            </div>
-            <div class="col-md-2 col-sm-2">
-              <h4><a href="partenariat.html">Partenariat</a></h4>
-              <h6><a href="partenariat.html">Les entreprises</a></h6>
-              <h6><a href="partenariat.html#pageAsso">Les associations</a></h6>
-              <h6><a href="partenariat.html#pageInstitution">Les institutions</a></h6>
-              <h6><a href="partenariat.html#pageParticulier">Les particuliers</a></h6>
-            </div>
-            <div class="col-md-2 col-sm-2">
-              <h4><a href="laFabrik.html">La Fabrik</a></h4>
-              <h6><a href="laFabrik.html">Présentation</a></h6>
-              <h6><a href="laFabrik.html#pageActu">Les actualités</a></h6>
-              <h6><a href="laFabrik.html#pageProjet">Projets</a></h6>
-              <h6><a href="laFabrik.html#pagePhoto">Photos</a></h6>
-              <h6><a href="apprenants.html">Les apprenants</a></h6>
-            </div>
-            <div class="col-md-2 col-sm-2">
-              <h4><a href="contact.php">Contact</a></h4>
-            </div>
-          </div>
-        </div>
-        <div class="row" id="lienMentions">
-                <p class="text-center"><a href="mentions.html">Mentions légales</a></p>
-        </div>
-    </footer>
+
 
      <script src="../public/js/jquery.js"></script>
     <script src="../public/js/bootstrap.js "></script>
