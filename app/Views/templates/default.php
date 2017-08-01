@@ -37,6 +37,16 @@
       <nav class="navbar navbar-default col-md-9 col-sm-10 col-xs-9">
         <div class="container-fluid">
           <ul class="nav navbar-nav">
+            
+            <!--Bouton-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Qui sommes nous?<span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Face Territoire Bourbonnais</a></li>
+                <li><a href="#ancrepartenaires">Partenaires</a></li>
+              </ul>
+            </li>
             <!--Bouton-->
             <li class="dropdown">
               <a href="index.php?p=actions.index">Actions</a>
@@ -46,35 +56,16 @@
 
 
 
+
             <!--Bouton-->
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Présentation<span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Histoire</a></li>
-                <li><a href="#pagePalmares">Action</a></li>
-              </ul>
-            </li>
-            <!--Bouton-->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Presse<span class="caret"></span></a>
-              <ul class="dropdown-menu" id="menuGalerie">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Presse</a>
+<!--           <ul class="dropdown-menu" id="menuGalerie">
                 <li><a href="galerie.html">Photos</a></li>
                 <li><a href="galerie.html#pageVideo">Médias</a></li>
                 <li><a href="galerie.html#CV video">CV Video</a></li>
-              </ul>
+              </ul> -->
             </li>
-            <!--Bouton-->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Partenariat<span class="caret"></span></a>
-              <ul class="dropdown-menu sousMenu">
-                <li><a href="partenariat.html">Les entreprises</a></li>
-                <li><a href="partenariat.html#pageAsso">Les associations</a></li>
-                <li><a href="partenariat.html#pageInstitution">Les institutions</a></li>
-                <li><a href="partenariat.html#pageParticulier">Les particuliers</a></li>
-              </ul>
-            </li>
-
             <!--Bouton-->
             <li class="dropdown">
               <a href="contact.php" role="button">Contact</a>
@@ -108,7 +99,7 @@ https://www.solodev.com/blog/web-design/adding-an-infinite-client-logo-carousel-
 
 <div class="row-fluid footerext">
 
-<h3 class="text-center">Nos partenaires</h3>
+<h3 class="text-center" id='ancrepartenaires'>Nos partenaires</h3>
 </div>
 <div id=partners-slider>
    <section class="customer-logos slider" >
