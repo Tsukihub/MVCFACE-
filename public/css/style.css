@@ -144,7 +144,7 @@ blockquote {
 
 .footer, .footerext {
   background-color: #335d68;
-  margin-top: 2%;
+  margin-top: 10px;
   padding: 20px 0 0 50px;
   width: 100%;
   border-top: 5px solid #E0A377;
@@ -172,7 +172,8 @@ blockquote {
 
 #mention {
   /*Arrière plan de la section comportant les mentions légales*/
-  padding: 3%;
+  padding-bottom: 3%;
+  padding-top: 3%;
   background-color: white; }
 
 /*//////////////////////////////////////////////////////////////////////////////*/
@@ -933,5 +934,5 @@ small {
   display: none; }
 
 #partners-slider {
-  margin-top: 2%;
+  margin-top: 10px;
   margin-bottom: 0px; }
