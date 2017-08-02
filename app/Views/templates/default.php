@@ -127,37 +127,28 @@ https://www.solodev.com/blog/web-design/adding-an-infinite-client-logo-carousel-
   <div id="plan-site">
     <h4 class="text-center col-xs-12 col-md-12" onclick="affichageFooter('planSite');" id="titrePlanSite">Plan du site</h4>
     <div class="col-md-12 col-xs-12" id="planSite">
-      <div class="row-fluid">
+      <div class="row-fluid planDuSite">
+          <div class="col-md-1 col-sm-1">
+        
+        </div>
         <div class="col-md-2 col-sm-2">
           <h4><a href="index.html">Accueil</a></h4>
         </div>
         <div class="col-md-2 col-sm-2">
-          <h4><a href="presentation.html">Présentation</a></h4>
-          <h6><a href="presentation.html">Histoire</a></h6>
-          <h6><a href="presentation.html#pagePalmares">Action</a></h6>
+          <h4><a href="presentation.html">Qui sommes nous?</a></h4>
+          <h6><a href="presentation.html">Face Territoire Bourbonnais</a></h6>
+          <h6><a href="presentation.html#pagePalmares">Fondation Face</a></h6>
+          <h6><a href="#ancrepartenaires">Partenaires</a></h6>
         </div>
         <div class="col-md-2 col-sm-2">
-          <h4><a href="galerie.html">Galerie</a></h4>
-          <h6><a href="galerie.html">Photos</a></h6>
-          <h6><a href="galerie.html#pageVideo">Médias</a></h6>
+          <h4><a href="galerie.html">Actions</a></h4>
+
         </div>
         <div class="col-md-2 col-sm-2">
-          <h4><a href="partenariat.html">Partenariat</a></h4>
-          <h6><a href="partenariat.html">Les entreprises</a></h6>
-          <h6><a href="partenariat.html#pageAsso">Les associations</a></h6>
-          <h6><a href="partenariat.html#pageInstitution">Les institutions</a></h6>
-          <h6><a href="partenariat.html#pageParticulier">Les particuliers</a></h6>
+          <h4><a href="partenariat.html">Presse</a></h4>
         </div>
         <div class="col-md-2 col-sm-2">
-          <h4><a href="laFabrik.html">La Fabrik</a></h4>
-          <h6><a href="laFabrik.html">Présentation</a></h6>
-          <h6><a href="laFabrik.html#pageActu">Les actualités</a></h6>
-          <h6><a href="laFabrik.html#pageProjet">Projets</a></h6>
-          <h6><a href="laFabrik.html#pagePhoto">Photos</a></h6>
-          <h6><a href="apprenants.html">Les apprenants</a></h6>
-        </div>
-        <div class="col-md-2 col-sm-2">
-          <h4><a href="contact.php">Contact</a></h4>
+          <h4><a href="laFabrik.html">Contact</a></h4>
         </div>
       </div>
     </div>
