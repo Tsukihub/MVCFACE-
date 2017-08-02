@@ -44,6 +44,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a href="#">Face Territoire Bourbonnais</a></li>
+                <li><a href="#">Fondation agir contre l'exclusion</a></li>
                 <li><a href="#ancrepartenaires">Partenaires</a></li>
               </ul>
             </li>
@@ -59,7 +60,7 @@
 
             <!--Bouton-->
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Presse</a>
+              <a href="index.php?p=news.index" class="dropdown">Presse</a>
 <!--           <ul class="dropdown-menu" id="menuGalerie">
                 <li><a href="galerie.html">Photos</a></li>
                 <li><a href="galerie.html#pageVideo">Médias</a></li>
@@ -84,9 +85,11 @@
       <div class="col-md-8">
         <?= $content; ?>
       </div>
+      <?php if($sidecontent): ?>
       <div class="col-md-4">
         <?= $sidecontent; ?>
       </div>
+    <?php endif; ?>
     </main>
 
   </div><!-- /.container -->
@@ -137,7 +140,7 @@ https://www.solodev.com/blog/web-design/adding-an-infinite-client-logo-carousel-
         <div class="col-md-2 col-sm-2">
           <h4><a href="presentation.html">Qui sommes nous?</a></h4>
           <h6><a href="presentation.html">Face Territoire Bourbonnais</a></h6>
-          <h6><a href="presentation.html#pagePalmares">Fondation Face</a></h6>
+          <h6><a href="presentation.html#pagePalmares">Fondation agir contre l'exclusion</a></h6>
           <h6><a href="#ancrepartenaires">Partenaires</a></h6>
         </div>
         <div class="col-md-2 col-sm-2">
