@@ -11,12 +11,16 @@
             <div class="col-md-5">
             <h5><?= $news->fromwhere ?></h5>
             <small>
-              <?= $news->date; ?>
+              <?= $news->newsdatefr; ?>
               <!--         <i class="glyphicon glyphicon-map-marker"></i> -->
 
             </small>
           </div>
-          <a class="col-md-7" href="<?= $news->link; ?>" ><button type="button" class="btn btn-default boutonMobile pull-right">Voir l'article</button></a>
+          <?php if($news->link!==''): ?>
+          <a class="col-md-7" href="<?= $news->link; ?>" target="blank"><button type="button" class="btn btn-default boutonMobile pull-right">Voir l'article</button></a>
+        <?php else : ?>
+           <div class="col-md-7"  ><div class="newspaper pull-right">Presse papier</div></div>
+        <?php endif ?>
 
         </div>
       </div>
@@ -24,3 +28,5 @@
   <?php endforeach ?>
 </div>
 </section>
+
+

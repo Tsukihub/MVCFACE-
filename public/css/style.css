@@ -511,6 +511,11 @@ small {
   font-family: serif;
   background-color: #6AA2A9; }
 
+.newspaper {
+  margin-top: 15px;
+  color: #777;
+  font-style: oblique; }
+
 @media screen and (max-width: 640px) {
   /*/////////////////////Navigation//////////////////*/
   #boutonDon {

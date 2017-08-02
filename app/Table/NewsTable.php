@@ -13,9 +13,9 @@ class NewsTable extends Table{
      */
     public function last(){
         return $this->query("
-            SELECT * 
+            SELECT *, DATE_FORMAT(newsdate,'%d/%m/%Y') AS newsdatefr
             FROM news 
-            ORDER BY news.date DESC");
+            ORDER BY newsdate DESC");
     }
 
 }
