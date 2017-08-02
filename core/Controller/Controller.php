@@ -14,16 +14,20 @@ class Controller{
     //     $content = ob_get_clean();
     //     require($this->viewPath . 'templates/' . $this->template . '.php');
     // }
-    protected function render($mainview, $mainvariables = [], $sideview ='defaultsidecontent', $sidevariables = []){
+    protected function render($mainview, $mainvariables = [], $sideview ='', $sidevariables = []){
         ob_start();
         extract($mainvariables);
         require($this->viewPath . str_replace('.', '/', $mainview) . '.php');
         $content = ob_get_clean();
+        $sidecontent= '';
+        if ($sideview !==''){
         ob_start();
         extract($sidevariables);
         require($this->viewPath . str_replace('.', '/', $sideview) . '.php');
         $sidecontent = ob_get_clean();
+    }
         require($this->viewPath . 'templates/' . $this->template . '.php');
+
 
     }
     protected function forbidden(){

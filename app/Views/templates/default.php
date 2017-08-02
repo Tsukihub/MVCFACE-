@@ -82,14 +82,20 @@
 
 
     <main class="row">
+     <?php if($sidecontent==''): ?>
+      <div class="col-md-12">
+        <?= $content; ?>
+      </div>
+    <?php endif ?>
+
+      <?php if($sidecontent!==''): ?>
       <div class="col-md-8">
         <?= $content; ?>
       </div>
-      <?php if($sidecontent): ?>
       <div class="col-md-4">
         <?= $sidecontent; ?>
       </div>
-    <?php endif; ?>
+    <?php endif ?>
     </main>
 
   </div><!-- /.container -->
