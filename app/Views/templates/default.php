@@ -69,7 +69,7 @@
             </li>
             <!--Bouton-->
             <li class="dropdown">
-              <a href="contact.php" role="button">Contact</a>
+              <a href="index.php?p=contacts.index" role="button">Contact</a>
             </li>
           </ul>
         </div>

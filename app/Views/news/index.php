@@ -1,4 +1,4 @@
-  <h1 class="col-xs-12 titlenews text-center">Face est dans les medias</h1>
+  <h1 class="col-xs-12 titlenews text-center">Face est dans les médias</h1>
   <section class="col-xs-12" id="sectionApprenant">
     <div class="row">
      <!--Profil de Andréa Lopez-->

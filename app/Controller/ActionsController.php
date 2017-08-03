@@ -39,4 +39,6 @@ class ActionsController extends AppController{
         $category = $this->Category->categoryRelativeTo();
         $this->render('actions.category', compact('action','categorie'), 'actions.index.side', compact('category'));
     }
+
+
 }

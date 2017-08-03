@@ -21,7 +21,7 @@
 
     <div class="row-fluid" id="barre">
       <div id="placementDon">
-        <a href="#" class="btn btn-default" role="button" id="boutonDon"> Cliquez pour : tout <span>supprimer</span></a>
+        <a href="index.php" class="btn btn-default" role="button" id="boutonDon"> Cliquez pour : retourner au <span>site</span></a>
       </div>
     </div>
 

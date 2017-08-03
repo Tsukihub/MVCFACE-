@@ -23,6 +23,7 @@
                     <input type="hidden" name="id" value="<?= $action->id ?>">
                     <button type="submit" class="btn btn-danger">Supprimer</button>
                 </form>
+                <a class="btn btn-primary" href="?p=admin.actions.changeImage&id=<?= $action->id; ?>">Changer l'image</a>       
             </td>
         </tr>
         <?php endforeach; ?>

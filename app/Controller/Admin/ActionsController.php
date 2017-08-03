@@ -14,6 +14,7 @@ class ActionsController extends AppController{
  
     }
 
+
     public function index(){
         $actions = $this->Action->all();
         $this->render('admin.actions.index', compact('actions'));
@@ -41,8 +42,7 @@ class ActionsController extends AppController{
 
     public function edit(){
         if (!empty($_POST)) {
-     
-  
+   
             $result = $this->Action->update($_GET['id'], [
                 'title' => $_POST['title'],
                 'accroche' => $_POST['accroche'],
@@ -92,6 +92,30 @@ class ActionsController extends AppController{
             $result = $this->Action->delete($_POST['id']);
             return $this->index();
         }
+    }
+    Public function changeImage(){
+                if (!empty($_POST)) {
+   
+            $result = $this->Action->update($_GET['id'], [
+                'actions_img_name' => $_POST['actions_img_name'],
+                'actions_img_alt' => $_POST['actions_img_alt']
+
+            ]);
+        
+            if($result){
+                return $this->index();
+            }
+        }
+
+        $post = $this->Action->find($_GET['id']);
+        $this->loadModel('Img_path');
+        $path = $this->Img_path->findPath();
+        $form = new BootstrapForm($post);
+        $formulaire = new BootstrapForm();
+        $files = array_slice(scandir('../public/img/actions'), 2);
+        $this->render('admin.actions.changeImage', compact('post', 'path','files', 'formulaire', 'form'));
+
+
     }
 
 }
