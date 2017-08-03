@@ -101,8 +101,6 @@
     </div><!-- /.container -->
 
 
-
-
      <script src="../public/js/jquery.js"></script>
     <script src="../public/js/bootstrap.js "></script>
     <script type="text/javascript" src="../public/js/script.js"></script>
