@@ -42,8 +42,34 @@
 
 
  }
-function fillfield(nomimage){
-  // alert(nomimage);
-  $('.actions_img_name').val(nomimage);
-}
 
+ function imageaftersubmit(path, name){
+  
+    $('.aftersubmit').attr('src', path+name); 
+
+  }
+function fillfield(nomimage, pagepath){
+  $('.actions_img_name').val(nomimage);
+  imageaftersubmit(pagepath, nomimage);
+   
+}
+function fillfieldfromfield(pagepath){
+  var splitedpath = $('.actions_img').val();
+  if(splitedpath !== ""){
+  splitedpath = splitedpath.split("\\");
+  var path = splitedpath[splitedpath.length-1];
+  $('.actions_img_name').val(path);
+  }
+
+$( ".actions_img" ).change(function() {
+  alert( "Handler for .change() called." );
+});
+
+ $(function() {
+     $("input:file").change(function (){
+       alert("cjange");
+       // $(".filename").html(fileName);
+     });
+  });
+ 
+}

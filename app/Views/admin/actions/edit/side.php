@@ -1,10 +1,16 @@
 <?php if ($post->actions_img_name):?>
+<div class='col-md-6'>
 <p>Image actuelle :</p>
-              <img src="<?= $path->img_path.$post->actions_img_name; ?>" class="col-md-2 col-xs-1 col-sm-7" />
+              <img src="<?= $path->img_path.$post->actions_img_name; ?>" class="col-md-6" />
 <p>Nom :</p>
 <?= $post->actions_img_name ;?>
 <?php endif ?>
-
+</div>
+<div class='col-md-6'>
+<p>Image après soumission :</p>
+<img class="aftersubmit col-md-6" src="<?= $path->img_path.$post->actions_img_name; ?>" /> 
+</div>
+<!-- 
 <p>Image utilisées :</p>
 <?php foreach($actions as $action): ?>
 <?php if ($action->actions_img_name):?>
@@ -12,23 +18,19 @@
               <img src="<?= $path->img_path.$action->actions_img_name; ?>" class="col-md-2 col-xs-1 col-sm-7" />
 <p>Nom : <?= $action->actions_img_name ;?></p>
 
-<p>actions liées à l'image: <?= $action->title ;?></p>
+<p>actions liées à l'image: <?= $action->title ;?></p> -->
 </div>
 <?php endif; ?>
 <?php endforeach; ?>
-<p>Images disponibles</p>
-<p> Copier le nom de l'image dans le champ : Nom de l'image à afficher pour utiliser pour cette action :<br></p>
+<!-- <p>Images disponibles</p> -->
+<p> cliquer sur l'image à utiliser:<br></p>
+<div class ="row" style="height: 300px; overflow-y: scroll;">
 <?php foreach($files as $files): ?>
-  <div class='row'>
-        <a onclick='fillfield("<?= $files ?>")'><img src="<?= $path->img_path.$files; ?>" class="col-md-2 col-xs-1 col-sm-7" />
-<p>Nom <?= $files;?></p></a>
-<br>
+
+        <div class="col-md-4 col-xs-1 col-sm-7" style="max-width: 80px; overflow: hidden;"><img style="height: 50px; width: 50px; margin: 5px;" onclick='fillfield("<?= $files ?>", "<?= $path->img_path ?>")' src="<?= $path->img_path.$files; ?>"/><a onclick='fillfield("<?= $files ?>", "<?= $path->img_path ?>")'><?= $files ?></a></div>
 
 
-</div>
+
 
 <?php endforeach; ?>
-<form method="post" enctype="multipart/form-data">
-    <?=$formulaire->input('img','image',['type'=>'file']);?>
-    <button class="btn btn-primary">Sauvegarder</button>
-</form>
+</div>

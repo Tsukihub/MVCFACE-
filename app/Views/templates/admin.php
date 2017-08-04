@@ -90,10 +90,10 @@
 
 
     <main class="row">
-        <div class="col-md-8">
+        <div class="col-md-6">
             <?= $content; ?>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <?= $sidecontent; ?>
         </div>
     </main>

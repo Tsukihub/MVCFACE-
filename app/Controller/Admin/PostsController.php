@@ -47,7 +47,7 @@ class PostsController extends AppController{
         }
         $post = $this->Post->find($_GET['id']);
         $this->loadModel('Category');
-        $categories = $this->Category->extract('id', 'titre');
+        $categories = $this->Category->extractIfCategoryRelativeTo('id', 'titre');;
         $form = new BootstrapForm($post);
         $this->render('admin.posts.edit', compact('categories', 'form'));
     }

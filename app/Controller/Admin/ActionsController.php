@@ -52,14 +52,15 @@ class ActionsController extends AppController{
             ]);
         
             if($result){
-                return $this->index();
+                // return $this->index();
             }
         }
 
 
-        if(isset($_FILES["img"])){
-           $upload = new Upload($_FILES["img"]);
+        if(isset($_FILES["actions_img"])){
+           $upload = new Upload($_FILES["actions_img"]);
            $upload->Process(ROOT."/public/img/actions");
+           print_r($_FILES);
            if ($upload->processed) {
            echo 'original image copied';
            } else {
@@ -78,7 +79,7 @@ class ActionsController extends AppController{
         $form = new BootstrapForm($post);
         $formulaire = new BootstrapForm();
         $files = array_slice(scandir('../public/img/actions'), 2);
-        $this->render('admin.actions.edit.main', compact('categories', 'form'), 'admin.actions.edit.side', compact('post', 'actions', 'path','files', 'formulaire'));
+        $this->render('admin.actions.edit.main', compact('categories', 'form', 'formulaire', 'path'), 'admin.actions.edit.side', compact('post', 'actions', 'path','files', 'formulaire'));
 
 
 
@@ -93,29 +94,4 @@ class ActionsController extends AppController{
             return $this->index();
         }
     }
-    Public function changeImage(){
-                if (!empty($_POST)) {
-   
-            $result = $this->Action->update($_GET['id'], [
-                'actions_img_name' => $_POST['actions_img_name'],
-                'actions_img_alt' => $_POST['actions_img_alt']
-
-            ]);
-        
-            if($result){
-                return $this->index();
-            }
-        }
-
-        $post = $this->Action->find($_GET['id']);
-        $this->loadModel('Img_path');
-        $path = $this->Img_path->findPath();
-        $form = new BootstrapForm($post);
-        $formulaire = new BootstrapForm();
-        $files = array_slice(scandir('../public/img/actions'), 2);
-        $this->render('admin.actions.changeImage', compact('post', 'path','files', 'formulaire', 'form'));
-
-
-    }
-
 }
