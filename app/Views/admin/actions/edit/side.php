@@ -6,10 +6,10 @@
 <?= $post->actions_img_name ;?>
 <?php endif ?>
 </div>
-<div class='col-md-6'>
+<!-- <div class='col-md-6'>
 <p>Image après soumission :</p>
 <img class="aftersubmit col-md-6" src="<?= $path->img_path.$post->actions_img_name; ?>" /> 
-</div>
+</div> -->
 <!-- 
 <p>Image utilisées :</p>
 <?php foreach($actions as $action): ?>
@@ -27,7 +27,7 @@
 <div class ="row" style="height: 300px; overflow-y: scroll;">
 <?php foreach($files as $files): ?>
 
-        <div class="col-md-4 col-xs-1 col-sm-7" style="max-width: 80px; overflow: hidden;"><img style="height: 50px; width: 50px; margin: 5px;" onclick='fillfield("<?= $files ?>", "<?= $path->img_path ?>")' src="<?= $path->img_path.$files; ?>"/><a onclick='fillfield("<?= $files ?>", "<?= $path->img_path ?>")'><?= $files ?></a></div>
+        <div class="col-md-4 col-xs-1 col-sm-7" style="max-width: 80px; overflow: hidden;"><img style="height: 50px; width: 50px; margin: 5px;" onclick='fillfield("<?= $files ?>", "<?= $path->img_path ?>")' src="<?= $path->img_path.$files; ?>"/><a onclick='fillfield("<?= $files ?>")'><?= $files ?></a></div>
 
 
 
