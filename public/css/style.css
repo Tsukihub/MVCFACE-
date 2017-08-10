@@ -328,6 +328,17 @@ aside {
     .presentation .articles h2 {
       margin-top: 0px; }
 
+.pagepresentation {
+  color: #777; }
+  .pagepresentation p {
+    margin: 30px auto; }
+  .pagepresentation h1 {
+    margin-bottom: 30px; }
+  .pagepresentation ul {
+    list-style-type: '-'; }
+    .pagepresentation ul li {
+      padding: 10px 0px 10px 30px; }
+
 #presentation img {
   width: 10%; }
 

@@ -24,14 +24,16 @@ class PostsController extends AppController{
         if($categorie === false){
             $this->notFound();
         }
-        $articles = $this->Post->lastByCategory($_GET['category']);
+        $articles = $this->Post->findCategory($_GET['category']);
+        // $articles = $this->Post->lastByCategory($_GET['category']);
         $category = $this->Category->categoryRelativeTo();
         $this->render('posts.category', compact('articles', 'categorie'), 'actions.index.side', compact('category'));
     }
 
     public function show(){
+        $categorie = $this->Category->find($_GET['category']);
         $article = $this->Post->findWithCategory($_GET['id']);
-        $this->render('posts.show', compact('article'));
+        $this->render('posts.show', compact('article', 'categorie'));
     }
 
 }
