@@ -22,7 +22,7 @@
 
   <div class="row-fluid" id="barre">
     <div id="placementDon">
-      <a href="#" class="btn btn-default" role="button" id="boutonDon"> Soutenez-nous : Faire un <span>don</span></a>
+      <a href="#" class="btn btn-default" role="button" id="boutonDon"> Soutenez-nous : <span>choississez</span> comment</a>
     </div>
   </div>
 
@@ -44,7 +44,6 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a href="#">Face Territoire Bourbonnais</a></li>
-                <li><a href="#">Fondation agir contre l'exclusion</a></li>
                 <li><a href="#ancrepartenaires">Partenaires</a></li>
               </ul>
             </li>

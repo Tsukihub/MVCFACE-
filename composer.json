@@ -1,0 +1,12 @@
+{
+    "name": "root/mvc",
+    "require": {
+        "phpmailer/phpmailer": "^5.2"
+    },
+    "authors": [
+        {
+            "name": "Tsukihub",
+            "email": "audeeccher@gmail.com"
+        }
+    ]
+}

@@ -362,7 +362,11 @@ aside {
   padding: 2%;
   border-radius: 10px;
   border: 2px solid orange;
-  color: white; }
+  color: white;
+  line-height: 30px; }
+  #sectionContact form h4 {
+    margin-top: 20px;
+    margin-bottom: 20px; }
   #sectionContact form h2 {
     padding-left: 4%;
     font-weight: 600; }
