@@ -43,7 +43,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Qui sommes nous?<span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="#">Face Territoire Bourbonnais</a></li>
+                <li><a href="index.php?p=presentations.index">Face Territoire Bourbonnais</a></li>
                 <li><a href="#ancrepartenaires">Partenaires</a></li>
               </ul>
             </li>
