@@ -14,8 +14,8 @@ class PresentationsController extends AppController{
     }
 
     public function index(){
-        $presentation = $this->Presentation->all();
-         $this->render('presentation.index', compact('presentation'));
+        $presentations = $this->Presentation->all();
+         $this->render('presentation.index', compact('presentations'));
     }
 
 

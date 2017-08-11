@@ -22,83 +22,93 @@
     <div class="row-fluid" id="barre">
       <div id="placementDon">
         <a href="index.php" class="btn btn-default" role="button" id="boutonDon"> Cliquez pour : retourner au <span>site</span></a>
-      </div>
     </div>
+</div>
 
-    <div class="container">
+<div class="container">
 
     <header class="row">
-                    <!--Logo Face-->
-                    <div class="col-md-3 col-sm-3 col-xs-12 logoFace">
-                        <a href="index.php?p=admin.posts.index"><img src="../public/img/logo.svg" alt="logo Face territoire bourbonnais" id="logo" /></a>
-                    </div>
-                    <!--Barre de navigation-->
-                    <nav class="navbar navbar-default col-md-9 col-sm-10 col-xs-9">
-                        <div class="container-fluid">
-                            <ul class="nav navbar-nav">
-             
+        <!--Logo Face-->
+        <div class="col-md-3 col-sm-3 col-xs-12 logoFace">
+            <a href="index.php?p=admin.posts.index"><img src="../public/img/logo.svg" alt="logo Face territoire bourbonnais" id="logo" /></a>
+        </div>
+        <!--Barre de navigation-->
+        <nav class="navbar navbar-default col-md-9 col-sm-10 col-xs-9">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+
                   <!--Bouton-->
                   <li class="dropdown">
                     <a href="index.php?p=admin.actions.index">Actions</a>
-                  </li>
+                </li>
 
 
 
 
 
-                        <!--Bouton-->
-                        <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Présentation<span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Histoire</a></li>
-                            <li><a href="#pagePalmares">Action</a></li>
-                        </ul>
-                        </li>
-                        <!--Bouton-->
-                        <li class="dropdown">
-                        <a href="index.php?p=admin.news.index">Presse</a>
-                        </li>
-                        <!--Bouton-->
-                        <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Partenariat<span class="caret"></span></a>
-                        <ul class="dropdown-menu sousMenu">
-                            <li><a href="partenariat.html">Les entreprises</a></li>
-                      <li><a href="partenariat.html#pageAsso">Les associations</a></li>
-                            <li><a href="partenariat.html#pageInstitution">Les institutions</a></li>
-                            <li><a href="partenariat.html#pageParticulier">Les particuliers</a></li>
-                        </ul>
-                        </li>
-                  
-                  <!--Bouton-->
-                  <li class="dropdown">
-                    <a href="contact.php" role="button">Contact</a>
-                  </li>
+                <!--Bouton-->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Présentation<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Histoire</a></li>
+                        <li><a href="#pagePalmares">Action</a></li>
                     </ul>
-                </div>
-            </nav>
-    </header>
+                </li>
+                <!--Bouton-->
+                <li class="dropdown">
+                    <a href="index.php?p=admin.news.index">Presse</a>
+                </li>
+                <!--Bouton-->
+                <!--Bouton-->
+                <li class="dropdown">
+                <a href="index.php?p=admin.presentations.index" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Qui sommes nous?<span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="index.php?p=admin.presentations.index">Face Territoire Bourbonnais</a></li>
+                    <li><a href="#ancrepartenaires">Partenaires</a></li>
+                </ul>
+            </li>
+            <!--Bouton-->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Partenariat<span class="caret"></span></a>
+                <ul class="dropdown-menu sousMenu">
+                    <li><a href="partenariat.html">Les entreprises</a></li>
+                    <li><a href="partenariat.html#pageAsso">Les associations</a></li>
+                    <li><a href="partenariat.html#pageInstitution">Les institutions</a></li>
+                    <li><a href="partenariat.html#pageParticulier">Les particuliers</a></li>
+                </ul>
+            </li>
+
+            <!--Bouton-->
+            <li class="dropdown">
+                <a href="contact.php" role="button">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header>
 
 
 
 
 
 
-    <main class="row">
-        <div class="col-md-6">
-            <?= $content; ?>
-        </div>
-        <div class="col-md-6">
-            <?= $sidecontent; ?>
-        </div>
-    </main>
+<main class="row">
+    <div class="col-md-6">
+        <?= $content; ?>
+    </div>
+    <div class="col-md-6">
+        <?= $sidecontent; ?>
+    </div>
+</main>
 
-    </div><!-- /.container -->
+</div><!-- /.container -->
 
 
-     <script src="../public/js/jquery.js"></script>
-    <script src="../public/js/bootstrap.js "></script>
-    <script type="text/javascript" src="../public/js/script.js"></script>
+<script src="../public/js/jquery.js"></script>
+<script src="../public/js/bootstrap.js "></script>
+<script type="text/javascript" src="../public/js/script.js"></script>
 </body>
 
 </html>
