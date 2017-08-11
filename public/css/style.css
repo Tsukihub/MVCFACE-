@@ -8,7 +8,9 @@ html, body {
   /*Mise à zéro marges extérieures*/ }
 
 body {
-  background-color: #F0F0F0; }
+  background: url(https://s-media-cache-ak0.pinimg.com/736x/82/a6/6c/82a66c6b69a61564494a682e4fb0d704.jpg) no-repeat center fixed;
+  background-size: cover;
+  /*Couleur de fond de la page*/ }
 
 .container {
   /*Mise à zéro du padding du container de bootstrap*/

@@ -136,25 +136,25 @@ https://www.solodev.com/blog/web-design/adding-an-infinite-client-logo-carousel-
       <div class="row-fluid planDuSite">        
 
         <div class="col-md-2 col-sm-2">
-          <h4><a href="index.html">Accueil</a></h4>
+          <h4><a href="index.php?p=posts.index">Accueil</a></h4>
         </div>
         <div class="col-md-2 col-sm-2">
-          <h4><a href="presentation.html">Qui sommes nous?</a></h4>
-          <h6><a href="presentation.html">Face Territoire Bourbonnais</a></h6>
+          <h4><a href="index.php?p=presentations.index">Qui sommes nous?</a></h4>
+          <h6><a href="index.php?p=presentations.index">Face Territoire Bourbonnais</a></h6>
           <h6><a href="#ancrepartenaires">Partenaires</a></h6>
         </div>
         <div class="col-md-2 col-sm-2">
-          <h4><a href="galerie.html">Actions</a></h4>
+          <h4><a href="index.php?p=actions.index">Actions</a></h4>
 
         </div>
         <div class="col-md-2 col-sm-2">
-          <h4><a href="partenariat.html">Nous rejoindre</a></h4>
+          <h4><a href="index.php?p=memberships.index">Nous rejoindre</a></h4>
         </div>  
           <div class="col-md-2 col-sm-2">
-          <h4><a href="partenariat.html">Presse</a></h4>
+          <h4><a href="index.php?p=news.index">Presse</a></h4>
         </div>
         <div class="col-md-2 col-sm-2">
-          <h4><a href="laFabrik.html">Contact</a></h4>
+          <h4><a href="index.php?p=contacts.index">Contact</a></h4>
         </div>
       </div>
     </div>
