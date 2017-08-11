@@ -24,5 +24,6 @@
               <?php endif ?>
             </div>
           </article>
-          <p><em class="pull-right category"><a href="<?= $categorie->url ?>"><?= $article->categorie; ?></a></em></p>
+         
+    <?php if ($categorie && $article->categorie) : ?> <p><em class="pull-right category"><a href="<?= $categorie->url ?>"><?= $article->categorie; ?></a></em></p><?php endif ?>
     </section>

@@ -36,5 +36,47 @@ public function categoryRelativeTo(){
         }
         return $return;
     }
+    
+            public function extractfromtwotables($key, $value){
+        $records = $this->query("
+            SELECT pageforcategories.nametoshow, pageforcategories.pagename
+            FROM pageforcategories");
+        $return = [];
+        foreach($records as $v){
+            $return[$v->$key] = $v->$value;
+        }
+        return $return;
+    }
+
+    public function canisuppress(){
+        $records = $this->query("
+            SELECT categories.id, categories.titre as category, categories.titre, articles.titre, actions.title
+            FROM categories
+            LEFT JOIN articles ON categories.id= articles.articles_category_id
+            LEFT JOIN actions ON categories.id=actions.actions_category_id");
+        $isunused=[];
+        $i=0;
+        foreach ($records as $record) {
+            if ($record->titre=='' && $record->title==''){
+                $isunused[$i]=$record->category;
+                 $i++;
+            }
+           
+        }
+        return $isunused;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

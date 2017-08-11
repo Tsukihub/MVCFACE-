@@ -21,7 +21,8 @@
 
     <div class="row-fluid" id="barre">
       <div id="placementDon">
-        <a href="index.php" class="btn btn-default" role="button" id="boutonDon"> Cliquez pour : retourner au <span>site</span></a>
+        <a href="index.php" class="btn btn-default" role="button" id="boutonDon"><span>interface utilisateur</span></a>
+        <a href="index.php?p=admin.categories.index" class="btn btn-default" role="button" id="boutonDon"> catégories</a>
     </div>
 </div>
 
@@ -36,57 +37,46 @@
         <nav class="navbar navbar-default col-md-9 col-sm-10 col-xs-9">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
+                    <!--Bouton-->
+                    <li class="dropdown">
+                        <a href="index.php?p=admin.presentations.index" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Qui sommes nous?<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.php?p=admin.presentations.index">Face Territoire Bourbonnais</a></li>
+                            <li><a href="#ancrepartenaires">Partenaires</a></li>
+                        </ul>
+                    </li>
 
-                  <!--Bouton-->
-                  <li class="dropdown">
-                    <a href="index.php?p=admin.actions.index">Actions</a>
-                </li>
+                    <!--Bouton-->
+                    <li class="dropdown">
+                        <a href="index.php?p=admin.actions.index">Actions</a>
+                    </li>
+                    <!--Bouton-->
+                    <li class="dropdown">
+                        <a href="index.php?p=admin.news.index">Presse</a>
+                    </li>
+                    <!--Bouton-->
+                    <li class="dropdown">
+                        <a href="#">Rejoignez-nous</span></a>
+                    </li>
+
+                    <!--Bouton-->
+                    <li class="dropdown">
+                        <a href="contact.php" role="button">Contact</a>
+                    </li>
 
 
-
-
-
-                <!--Bouton-->
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Présentation<span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Histoire</a></li>
-                        <li><a href="#pagePalmares">Action</a></li>
-                    </ul>
-                </li>
-                <!--Bouton-->
-                <li class="dropdown">
-                    <a href="index.php?p=admin.news.index">Presse</a>
-                </li>
-                <!--Bouton-->
-                <!--Bouton-->
-                <li class="dropdown">
-                <a href="index.php?p=admin.presentations.index" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Qui sommes nous?<span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a href="index.php?p=admin.presentations.index">Face Territoire Bourbonnais</a></li>
-                    <li><a href="#ancrepartenaires">Partenaires</a></li>
-                </ul>
-            </li>
-            <!--Bouton-->
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Partenariat<span class="caret"></span></a>
-                <ul class="dropdown-menu sousMenu">
-                    <li><a href="partenariat.html">Les entreprises</a></li>
-                    <li><a href="partenariat.html#pageAsso">Les associations</a></li>
-                    <li><a href="partenariat.html#pageInstitution">Les institutions</a></li>
-                    <li><a href="partenariat.html#pageParticulier">Les particuliers</a></li>
-                </ul>
-            </li>
-
-            <!--Bouton-->
-            <li class="dropdown">
-                <a href="contact.php" role="button">Contact</a>
-            </li>
+                    <!--Bouton-->
+      <!--       <li class="dropdown">
+                <a href="index.php?p=admin.categories.index" role="button">Catégories</a>
+            </li> -->
         </ul>
     </div>
 </nav>
+
+       
+
+
 </header>
 
 

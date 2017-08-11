@@ -1,9 +1,9 @@
 <article class="articles presentation pagepresentation col-md-10 col-md-offset-1">
  <h1 class="titreSection text-center col-md-12">Pourquoi nous rejoindre?</h1>
 <ul>
-<li>faire partie d'un réseau d'entreprises engagées sur le territoire;</li>
-<li>partager les bonnes pratiques de RSE;</li>
-<li>contribuer à la dynamique économique et sociale locale;</li>
+<li>pour faire partie d'un réseau d'entreprises engagées sur le territoire;</li>
+<li>pour partager les bonnes pratiques de RSE;</li>
+<li>pour contribuer à la dynamique économique et sociale locale;</li>
 </ul>
  </article>
  <article class="articles presentation pagepresentation col-md-10 col-md-offset-1">

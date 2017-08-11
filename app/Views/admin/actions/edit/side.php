@@ -1,7 +1,8 @@
-<?php if ($post->actions_img_name):?>
+
 <div class='col-md-6'>
 <p>Image actuelle :</p>
-              <img src="<?= $path->img_path.$post->actions_img_name; ?>" class="col-md-6" />
+              <?php if ($post->actions_img_name):?>
+              	<img src="<?= $path->img_path.$post->actions_img_name; ?>" class="col-md-6" />
 <p>Nom :</p>
 <?= $post->actions_img_name ;?>
 <?php endif ?>

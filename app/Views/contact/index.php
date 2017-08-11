@@ -5,7 +5,7 @@
            
             <h5 class="text-center"><span class="glyphicon glyphicon-home"> : Hôtel d'entreprises</span> </h5>
             
-            <p class="text-center"> 18 rue des Tanneries, Moulins</p>
+            <p class="text-center"> 18 rue des Tanneries, 03000 Moulins</p>
             <h4 class="text-center">Contact : </h4>
 
             <h5 class="text-center">Madame Christine Berger</h5>
