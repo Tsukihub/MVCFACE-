@@ -39,6 +39,9 @@ body {
 nav .dropdown-menu li a:hover {
   background-color: inherit !important; }
 
+.edit .contentType {
+  display: none; }
+
 /*////////////Bouton Don////////////////////////*/
 #barre {
   height: 60px;

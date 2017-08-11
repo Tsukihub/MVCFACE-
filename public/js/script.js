@@ -51,7 +51,7 @@
   }
 function fillfield(nomimage){
   $('.actions_img_name').val(nomimage);
-  $(".aftersubmit").attr('src','../public/img/actions/monimage.jpg');
+  $('.nomimage').html(nomimage);
  
    
 }
