@@ -57,12 +57,7 @@
                         </li>
                         <!--Bouton-->
                         <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galerie<span class="caret"></span></a>
-                        <ul class="dropdown-menu" id="menuGalerie">
-                            <li><a href="galerie.html">Photos</a></li>
-                            <li><a href="galerie.html#pageVideo">Médias</a></li>
-                            <li><a href="galerie.html#CV video">CV Video</a></li>
-                        </ul>
+                        <a href="index.php?p=admin.news.index">Presse</a>
                         </li>
                         <!--Bouton-->
                         <li class="dropdown">
