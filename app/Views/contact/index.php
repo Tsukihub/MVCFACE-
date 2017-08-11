@@ -1,7 +1,7 @@
 
         <div class="form-horizontal col-md-8 col-md-offset-2 col-xs-12">
           <section id="contactFace">
-             <h4 class="text-center">FACE bourbonnais </h4>
+             <h4 class="text-center">FACE Territoire Bourbonnais </h4>
            
             <h5 class="text-center"><span class="glyphicon glyphicon-home"> : Hôtel d'entreprises</span> </h5>
             

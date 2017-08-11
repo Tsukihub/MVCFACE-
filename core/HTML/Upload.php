@@ -1759,7 +1759,7 @@ class Upload {
         $this->image_default_color      = '#ffffff';
         $this->image_is_palette         = false;
 
-        $this->image_max_width          = ;
+        $this->image_max_width          = null;
         $this->image_max_height         = null;
         $this->image_max_pixels         = null;
         $this->image_max_ratio          = null;

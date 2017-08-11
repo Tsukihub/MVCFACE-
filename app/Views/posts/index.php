@@ -1,4 +1,4 @@
-        <h1 class="titreSection col-md-12 text-center">Actualités</h1>
+        <h1 class="titreSection col-md-12 text-center">Rendez-vous/actualités</h1>
           <section class="col-md-12 presentation">
           <!--Palmarès-->
           <article id="Palmares">

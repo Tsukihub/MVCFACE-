@@ -6,11 +6,11 @@
 <?= $post->actions_img_name ;?>
 <?php endif ?>
 </div>
-<!-- <div class='col-md-6'>
-<p>Image après soumission :</p>
-<img class="aftersubmit col-md-6" src="<?= $path->img_path.$post->actions_img_name; ?>" /> 
-</div> -->
-<!-- 
+<div class='col-md-6'>
+<!-- <p>Image après soumission :</p>
+<img class="aftersubmit col-md-6" src="<?= $path->img_path.$post->actions_img_name; ?>" />  -->
+</div>
+<div class='col-md-12'>
 <p>Image utilisées :</p>
 <?php foreach($actions as $action): ?>
 <?php if ($action->actions_img_name):?>
@@ -18,10 +18,11 @@
               <img src="<?= $path->img_path.$action->actions_img_name; ?>" class="col-md-2 col-xs-1 col-sm-7" />
 <p>Nom : <?= $action->actions_img_name ;?></p>
 
-<p>actions liées à l'image: <?= $action->title ;?></p> -->
+<p>actions liées à l'image: <?= $action->title ;?></p>
 </div>
-<?php endif; ?>
+<?php endif; ?> 
 <?php endforeach; ?>
+
 <!-- <p>Images disponibles</p> -->
 <p> cliquer sur l'image à utiliser:<br></p>
 <div class ="row" style="height: 300px; overflow-y: scroll;">
@@ -33,4 +34,5 @@
 
 
 <?php endforeach; ?>
+</div>
 </div>

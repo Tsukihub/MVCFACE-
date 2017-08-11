@@ -22,7 +22,7 @@
 
   <div class="row-fluid" id="barre">
     <div id="placementDon">
-      <a href="#" class="btn btn-default" role="button" id="boutonDon"> Soutenez-nous : <span>choississez</span> comment</a>
+      <a href="index.php?p=memberships.index" class="btn btn-default" role="button" id="boutonDon">Devenez <span>membre</span></a>
     </div>
   </div>
 
@@ -53,7 +53,7 @@
             </li>
             <!--Bouton-->
             <li class="dropdown">
-              <a href="index.php?p=actions.index">Nous rejoindre</a>
+              <a href="index.php?p=memberships.index">Nous rejoindre</a>
             </li>
 
 
@@ -63,11 +63,6 @@
             <!--Bouton-->
             <li class="dropdown">
               <a href="index.php?p=news.index" class="dropdown">Presse</a>
-<!--           <ul class="dropdown-menu" id="menuGalerie">
-                <li><a href="galerie.html">Photos</a></li>
-                <li><a href="galerie.html#pageVideo">Médias</a></li>
-                <li><a href="galerie.html#CV video">CV Video</a></li>
-              </ul> -->
             </li>
             <!--Bouton-->
             <li class="dropdown">

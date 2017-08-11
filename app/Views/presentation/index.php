@@ -25,9 +25,9 @@ Le Club FACE TERRITOIRE BOURBONNAIS est aussi un lieu de réflexion et d'échang
     <h1 class="titreSection text-center col-md-12">Les grandes actions du Club :</h1>
 
 <ul>
-<li>création de formations courtes et spécifiques aux besoins des entreprises (appel à projet de la Grande Ecole du Numérique ;</li>
+<li>création de formations courtes et spécifiques aux besoins des entreprises (appel à projet de la <a href="index.php?p=actions.show&id=16&category=3">Grande Ecole du Numérique</a> ;</li>
 <li>détection de talents locaux ;</li>
-<li>créer et développer les CV Vidéos et Offres vidéos (CV à l'envers) ;</li>
+<li>créer et développer les <a href="index.php?p=actions.show&id=17&category=3">CV Vidéos</a> et Offres vidéos (CV à l'envers) ;</li>
 <li>les Cafés d'En Face pour échanger entre les jeunes et chefs d'entreprises ;</li>
 <li>contribuer à l'insertion professionnelle et sociale des demandeurs d'emploi, jeunes et séniors en favorisant le parrainage ;</li>
 <li>concevoir, expérimenter, développer et accompagner les entreprises dans le développement des pratiques RSE;</li>
