@@ -13,7 +13,7 @@ class PostTable extends Table{
      */
     public function last(){
         return $this->query("
-            SELECT articles.id, articles.titre, articles.contenu, articles.accroche, articles.date, categories.titre as categorie
+            SELECT articles.id, articles.titre, articles.contenu, articles.accroche, articles.date, articles.articles_category_id, categories.titre as categorie
             FROM articles
             LEFT JOIN categories ON articles_category_id = categories.id
             ORDER BY articles.date DESC");
@@ -40,7 +40,7 @@ class PostTable extends Table{
      */
     public function findWithCategory($id){
         return $this->query("
-            SELECT articles.id, articles.titre, articles.contenu, articles.date, categories.titre as categorie
+            SELECT articles.id, articles.titre, articles.contenu, articles.date, articles.articles_img_name, articles.accroche, categories.titre as categorie
             FROM articles
             LEFT JOIN categories ON articles_category_id = categories.id
             WHERE articles.id = ?", [$id], true);

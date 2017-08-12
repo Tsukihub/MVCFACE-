@@ -56,7 +56,7 @@ class ActionsController extends AppController{
             }
         }
 
-
+        $upload ="";
         if(isset($_FILES["actions_img"])){
            $upload = new Upload($_FILES["actions_img"]);
            $upload->Process(ROOT."/public/img/actions");
@@ -79,7 +79,7 @@ class ActionsController extends AppController{
         $form = new BootstrapForm($post);
         $formulaire = new BootstrapForm();
         $files = array_slice(scandir('../public/img/actions'), 2);
-        $this->render('admin.actions.edit.main', compact('categories', 'form', 'formulaire', 'path'), 'admin.actions.edit.side', compact('post', 'actions', 'path','files', 'formulaire'));
+        $this->render('admin.actions.edit.main', compact('categories', 'form', 'formulaire', 'path', 'upload', 'uploaddestname'), 'admin.actions.edit.side', compact('post', 'actions', 'path','files', 'formulaire'));
 
 
 

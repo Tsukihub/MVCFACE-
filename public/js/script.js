@@ -38,22 +38,24 @@
    		}else {
      		div.style.display = "none";
    		} 
-	}
+	
 
 
  }
+}
 
  function imageaftersubmit(path, name){
   
-    $('.aftersubmit').attr('src', path+name); 
+     
 
   }
-function fillfield(nomimage, pagepath){
+function fillfield(nomimage){
   $('.actions_img_name').val(nomimage);
-  imageaftersubmit(pagepath, nomimage);
+  $('.nomimage').html(nomimage);
+ 
    
 }
-function fillfieldfromfield(pagepath){
+function fillfieldfromfield(){
   var splitedpath = $('.actions_img').val();
   if(splitedpath !== ""){
   splitedpath = splitedpath.split("\\");
@@ -61,15 +63,6 @@ function fillfieldfromfield(pagepath){
   $('.actions_img_name').val(path);
   }
 
-$( ".actions_img" ).change(function() {
-  alert( "Handler for .change() called." );
-});
 
- $(function() {
-     $("input:file").change(function (){
-       alert("cjange");
-       // $(".filename").html(fileName);
-     });
-  });
  
 }

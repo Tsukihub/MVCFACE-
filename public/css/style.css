@@ -8,7 +8,9 @@ html, body {
   /*Mise à zéro marges extérieures*/ }
 
 body {
-  background-color: #F0F0F0; }
+  background: url(https://s-media-cache-ak0.pinimg.com/736x/82/a6/6c/82a66c6b69a61564494a682e4fb0d704.jpg) no-repeat center fixed;
+  background-size: cover;
+  /*Couleur de fond de la page*/ }
 
 .container {
   /*Mise à zéro du padding du container de bootstrap*/
@@ -36,6 +38,9 @@ body {
 
 nav .dropdown-menu li a:hover {
   background-color: inherit !important; }
+
+.edit .contentType {
+  display: none; }
 
 /*////////////Bouton Don////////////////////////*/
 #barre {
@@ -188,13 +193,10 @@ blockquote {
 #planSite {
   background-color: #1D4B58;
   margin: 30px 0 30px 0;
-  padding: 10px; }
+  text-align: center; }
   #planSite h6 {
-    text-indent: 5px;
     font-style: oblique;
     margin-top: 20px; }
-  #planSite h4 {
-    font-style: oblique; }
 
 #lienMentions {
   padding-bottom: 20px;
@@ -326,10 +328,20 @@ aside {
   .presentation .articles {
     margin: 0px; }
     .presentation .articles img {
-      margin-right: 0px;
-      padding-right: 0px; }
+      margin-right: 0px; }
     .presentation .articles h2 {
       margin-top: 0px; }
+
+.pagepresentation {
+  color: #777; }
+  .pagepresentation p {
+    margin: 30px auto; }
+  .pagepresentation h1 {
+    margin-bottom: 30px; }
+  .pagepresentation ul {
+    list-style-type: '-'; }
+    .pagepresentation ul li {
+      padding: 10px 0px 10px 30px; }
 
 #presentation img {
   width: 10%; }
@@ -365,7 +377,11 @@ aside {
   padding: 2%;
   border-radius: 10px;
   border: 2px solid orange;
-  color: white; }
+  color: white;
+  line-height: 30px; }
+  #sectionContact form h4 {
+    margin-top: 20px;
+    margin-bottom: 20px; }
   #sectionContact form h2 {
     padding-left: 4%;
     font-weight: 600; }

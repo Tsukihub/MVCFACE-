@@ -3,6 +3,9 @@ namespace App\Controller;
 
 use Core\Controller\Controller;
 
+
+
+
 class ContactsController extends AppController{
 
     public function __construct(){
@@ -13,8 +16,13 @@ class ContactsController extends AppController{
 
     }
    public function index(){
+
+
    	   $contact = $this->Contact->all();
-       $this->render('contact.index', compact('contact')); 
-    }
+       $this->render('contact.index', compact('contact', 'mail'));
+
+
+ 
+   }    
 
 }

@@ -33,8 +33,8 @@ class BootstrapForm extends Form{
     }
 
     public function select($name, $label, $options){
-        $label = '<label>' . $label . '</label>';
-        $input = '<select class="form-control" name="' . $name . '">';
+        $label = '<label class="'.$name.'">' . $label . '</label>';
+        $input = '<select class="'.$name.'" name="' . $name . '">';
         foreach($options as $k => $v){
             $attributes = '';
             if($k == $this->getValue($name)){

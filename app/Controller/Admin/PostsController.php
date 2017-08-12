@@ -39,6 +39,7 @@ class PostsController extends AppController{
             $result = $this->Post->update($_GET['id'], [
                 'titre' => $_POST['titre'],
                 'contenu' => $_POST['contenu'],
+                'accroche' => $_POST['accroche'],
                 'articles_category_id' => $_POST['articles_category_id']
             ]);
             if($result){

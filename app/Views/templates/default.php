@@ -22,7 +22,7 @@
 
   <div class="row-fluid" id="barre">
     <div id="placementDon">
-      <a href="#" class="btn btn-default" role="button" id="boutonDon"> Soutenez-nous : Faire un <span>don</span></a>
+      <a href="index.php?p=memberships.index" class="btn btn-default" role="button" id="boutonDon">Devenez <span>membre</span></a>
     </div>
   </div>
 
@@ -43,8 +43,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Qui sommes nous?<span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="#">Face Territoire Bourbonnais</a></li>
-                <li><a href="#">Fondation agir contre l'exclusion</a></li>
+                <li><a href="index.php?p=presentations.index">Face Territoire Bourbonnais</a></li>
                 <li><a href="#ancrepartenaires">Partenaires</a></li>
               </ul>
             </li>
@@ -52,7 +51,10 @@
             <li class="dropdown">
               <a href="index.php?p=actions.index">Actions</a>
             </li>
-
+            <!--Bouton-->
+            <li class="dropdown">
+              <a href="index.php?p=memberships.index">Nous rejoindre</a>
+            </li>
 
 
 
@@ -61,11 +63,6 @@
             <!--Bouton-->
             <li class="dropdown">
               <a href="index.php?p=news.index" class="dropdown">Presse</a>
-<!--           <ul class="dropdown-menu" id="menuGalerie">
-                <li><a href="galerie.html">Photos</a></li>
-                <li><a href="galerie.html#pageVideo">Médias</a></li>
-                <li><a href="galerie.html#CV video">CV Video</a></li>
-              </ul> -->
             </li>
             <!--Bouton-->
             <li class="dropdown">
@@ -108,7 +105,7 @@ https://www.solodev.com/blog/web-design/adding-an-infinite-client-logo-carousel-
 
 <div class="row-fluid footerext">
 
-<h3 class="text-center" id='ancrepartenaires'>Nos partenaires</h3>
+<h3 class="text-center" id='ancrepartenaires'>Nos entreprises adhérentes/partenaires</h3>
 </div>
 <div id=partners-slider>
    <section class="customer-logos slider" >
@@ -136,28 +133,28 @@ https://www.solodev.com/blog/web-design/adding-an-infinite-client-logo-carousel-
   <div id="plan-site">
     <h4 class="text-center col-xs-12 col-md-12" onclick="affichageFooter('planSite');" id="titrePlanSite">Plan du site</h4>
     <div class="col-md-12 col-xs-12" id="planSite">
-      <div class="row-fluid planDuSite">
-          <div class="col-md-1 col-sm-1">
-        
+      <div class="row-fluid planDuSite">        
+
+        <div class="col-md-2 col-sm-2">
+          <h4><a href="index.php?p=posts.index">Accueil</a></h4>
         </div>
         <div class="col-md-2 col-sm-2">
-          <h4><a href="index.html">Accueil</a></h4>
-        </div>
-        <div class="col-md-2 col-sm-2">
-          <h4><a href="presentation.html">Qui sommes nous?</a></h4>
-          <h6><a href="presentation.html">Face Territoire Bourbonnais</a></h6>
-          <h6><a href="presentation.html#pagePalmares">Fondation agir contre l'exclusion</a></h6>
+          <h4><a href="index.php?p=presentations.index">Qui sommes nous?</a></h4>
+          <h6><a href="index.php?p=presentations.index">Face Territoire Bourbonnais</a></h6>
           <h6><a href="#ancrepartenaires">Partenaires</a></h6>
         </div>
         <div class="col-md-2 col-sm-2">
-          <h4><a href="galerie.html">Actions</a></h4>
+          <h4><a href="index.php?p=actions.index">Actions</a></h4>
 
         </div>
         <div class="col-md-2 col-sm-2">
-          <h4><a href="partenariat.html">Presse</a></h4>
+          <h4><a href="index.php?p=memberships.index">Nous rejoindre</a></h4>
+        </div>  
+          <div class="col-md-2 col-sm-2">
+          <h4><a href="index.php?p=news.index">Presse</a></h4>
         </div>
         <div class="col-md-2 col-sm-2">
-          <h4><a href="laFabrik.html">Contact</a></h4>
+          <h4><a href="index.php?p=contacts.index">Contact</a></h4>
         </div>
       </div>
     </div>
@@ -168,7 +165,11 @@ https://www.solodev.com/blog/web-design/adding-an-infinite-client-logo-carousel-
     </div>
   </footer>
 
-  <script src="../public/js/jquery.js"></script>
+<!--   <script src="../public/js/jquery.js"></script> -->
+  <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
   <script src="../public/js/bootstrap.js "></script>
   <script type="text/javascript" src="../public/js/script.js"></script>
 
